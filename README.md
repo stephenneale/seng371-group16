@@ -1,15 +1,20 @@
-# seng371-group16
+# SENG 371 Group 16
 
-Contains Group 16's work for SENG371 A02 - Group 16, Spring 2023
+This repository contains Group 16's work for SENG371 A02 - Group 16, Spring 2023
 
-Members: Stephen Neale, Drew Petten, Matt Lebl, Samuel Gao
+## Members
 
-clients: group 13
+| Name             | V-Number     | Email                |
+| ---              | ---          | ---                  |
+| Stephen Neale    |              |                      |
+| Drew Petten      |              |                      |
+| Matt Lebl        | V00920526    | mlebl@uvic.ca        |
+| Samuel Gao       |              |                      |
 
-- this group provides the RFP
-- we develop software for them
+## Clients/Developers
 
-developers: group 17
+| Team       | Role        | Point of Contact |
+| ---        | ---         | ---              |
+| Group 13   | Clients     | Gudjon#2289      |
+| Group 17   | Developers  | NinjaCow#4255    |
 
-- we write an RFP for them
-- we develop software for this team
