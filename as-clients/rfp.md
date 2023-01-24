@@ -9,48 +9,48 @@ Atlantean Banking: Request for Proposals
 
 ## Table of Contents
 
-Product Overview  
-Project Objectives  
-Current System(s)  
-Intended Users of the System  
-Known interactions with systems within or outside the client organization  
-Known constraints to development  
-Project Schedule  
-Project team  
-Glossary of terms  
+(1.0) Product Overview  
+(2.0) Project Objectives  
+(3.0) Current System(s)  
+(4.0) Intended Users of the System  
+(5.0) Known interactions with systems within or outside the client organization  
+(6.0) Known constraints to development  
+(7.0) Project Schedule  
+(8.0) Project team  
+(9.0) Glossary of terms  
 
-## Product Overview
+## (1.0) Product Overview
 
 What is the need for improvement in the client organization?
 
-## Project Objectives
+## (2.0) Project Objectives
 
 Specify the objectives in detail
 
-## Current System(s)
+## (3.0) Current System(s)
 
 Current system(s) at the client organization (if any
 
-## Intended users of the system
+## (4.0) Intended users of the system
 
 In the client organization or outside
 
-## Known interaction with systems within or outside the client organization
+## (5.0) Known interaction with systems within or outside the client organization
 
 List up to three
 
-## Known constraints to development
+## (6.0) Known constraints to development
 
 List up to three
 
-## Project Schedule
+## (7.0) Project Schedule
 
 Broad overview, to be derived from course schedule
 
-## Project team
+## (8.0) Project team
 
 Project team member's info and roles
 Contact info
 
-## Glossary of terms
+## (9.0) Glossary of terms
 
