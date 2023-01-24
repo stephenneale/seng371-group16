@@ -53,7 +53,12 @@ There are two intended users of the sytem
 
 ## (5.0) Known interaction with systems within or outside the client organization
 
-List up to three
+In order to serve our clients effectively, we need to integrate with the existing global banking
+systems of Planet Earth. This is so that our clients can fully participate in the global economy.
+Concretely, the new banking system should integrate effectively with the SWIFT network.
+
+Additionally, the system should effectively integrate with the Internet so that customers travelling
+at home or around the world can access the system wherever they are.
 
 ## (6.0) Known constraints to development
 
