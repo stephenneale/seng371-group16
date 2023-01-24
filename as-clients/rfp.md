@@ -51,6 +51,11 @@ There are two intended users of the sytem
 - Bank Managers
 - Users of the bank
 
+ Users of the bank are the primary users and will be able to manage all of their banking needs through the chrome web browser. Users should be able to interact with the software through their personal computers or on mobile phones.
+ 
+ Bank managers are the secondary users of the bank and should be able to their bank managing needs (idk what bank managers need to do)
+ 
+
 ## (5.0) Known interaction with systems within or outside the client organization
 
 In order to serve our clients effectively, we need to integrate with the existing global banking
