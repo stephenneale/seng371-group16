@@ -62,11 +62,18 @@ at home or around the world can access the system wherever they are.
 
 ## (6.0) Known constraints to development
 
-List up to three
+Given that banking is a tightly regulated field that deals with high-value sensitive information,
+every effort must be taken to ensure that the system is not vulnerable to security attacks and
+that system integrity is prioritized.
+
+Additionally, in the interest of cost saving, we are focussing on the development of a system that
+is compatible with the Chrome web browser, compatibility with other browsers given little priority.
+This is because Chrome is used by the vast majority of internet users in Atlantis. Additionally,
+a mobile app is not prioritized at this time. The web version suffices.
 
 ## (7.0) Project Schedule
 
-Broad overview, to be derived from course schedule
+TBD
 
 ## (8.0) Project team
 
