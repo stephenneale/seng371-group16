@@ -77,8 +77,12 @@ TBD
 
 ## (8.0) Project team
 
-Project team member's info and roles
-Contact info
+| Name          | Role                        |
+| ---           | ---                         |
+| Stephen Neale |                             |
+| Drew Petten   | Head of project design      |
+| Matt Lebl     | Co-op student               |
+| Samuel Gao    |                             |
 
 ## (9.0) Glossary of terms
 
