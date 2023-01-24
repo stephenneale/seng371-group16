@@ -9,7 +9,7 @@ This repository contains Group 16's work for SENG371 A02 - Group 16, Spring 2023
 | Stephen Neale    |              |                      |
 | Drew Petten      |              |                      |
 | Matt Lebl        | V00920526    | mlebl@uvic.ca        |
-| Samuel Gao       |              |                      |
+| Samuel Gao       | V00891163    | tianleigao@uvic.ca   |
 
 ## Clients/Developers
 
