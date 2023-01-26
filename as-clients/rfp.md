@@ -32,28 +32,28 @@ We predict that making an online banking system will solve these issues and incr
 
 ## (2.0) Project Objectives
 
-The (name of bank) online banking system needs to fulfill the following needs
+The online banking system needs to fulfil the following needs
 
 - All users can view funds and transaction history, including but not limited too: withdrawls, purchases, and deposits. 
 - Users can view their credit card information, including but not limited too, credit card number, security code and credit limits.
 - Users can create investment and savings accounts
-- The sytem should be available 24/7
+- The system should be available 24/7
 - The system must be compatible with the Chrome browser as it is the only browser avaible to Atlanteans.
-- The system must supports up-to-date security measures
+- The system must support up-to-date security measures
 
 ## (3.0) Current System(s)
 
-The (name of bank) has a physcial bank and no online presence.
+We have a physical bank and no online presence.
 
 ## (4.0) Intended users of the system
 
 There are two intended users of the sytem
 - Bank Managers
-- Users of the bank
+- Bank clients
 
- Users of the bank are the primary users and will be able to manage all of their banking needs through the chrome web browser. Users should be able to interact with the software through their personal computers or on mobile phones.
+ Clients of the bank are the primary users and will be able to manage all of their banking needs through the chrome web browser. Clients should be able to interact with the software through their personal computers or on mobile phones.
  
- Bank managers are the secondary users of the bank and should be able to their bank managing needs (idk what bank managers need to do)
+ Bank managers are the secondary users of the system and should be able to perform their functions effectively, including viewing client accounts and making changes, subject to access restrictions appropriate for their stations.
  
 
 ## (5.0) Known interaction with systems within or outside the client organization
