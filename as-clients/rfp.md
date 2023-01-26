@@ -6,6 +6,7 @@ Atlantean Banking: Request for Proposals
 | Version | When            | Who                    | What                                      |
 | ---     | ---             | ---                    | ---                                       |
 | v1.0    | 2023-01-24      | Client team            | Initial drafting                          |
+| v1.01   | 2023-01-26      | Client team            | Add Glossary terms                        |
 
 ## Table of Contents
 
@@ -38,7 +39,7 @@ The online banking system needs to fulfil the following needs
 - Users can view their credit card information, including but not limited too, credit card number, security code and credit limits.
 - Users can create investment and savings accounts
 - The system should be available 24/7
-- The system must be compatible with the Chrome browser as it is the only browser avaible to Atlanteans.
+- The system must be compatible with the **Chrome** browser as it is the only browser avaible to Atlanteans.
 - The system must support up-to-date security measures
 
 ## (3.0) Current System(s)
@@ -60,7 +61,7 @@ There are two intended users of the sytem
 
 In order to serve our clients effectively, we need to integrate with the existing global banking
 systems of Planet Earth. This is so that our clients can fully participate in the global economy.
-Concretely, the new banking system should integrate effectively with the SWIFT network.
+Concretely, the new banking system should integrate effectively with the **SWIFT** network.
 
 Additionally, the system should effectively integrate with the Internet so that customers travelling
 at home or around the world can access the system wherever they are.
@@ -84,10 +85,15 @@ TBD
 
 | Name          | Role                        |
 | ---           | ---                         |
-| Stephen Neale |                             |
+| Stephen Neale | Front end developer         |
 | Drew Petten   | Head of project design      |
 | Matt Lebl     | Co-op student               |
 | Samuel Gao    |                             |
 
 ## (9.0) Glossary of terms
+
+**SWIFT** - The Society for Worldwide Interbank Financial Telecommunication (SWIFT), a cooperative society providing services related to the execution of financial transactions and payments between banks worldwide.
+
+**Chrome** - A cross-platform web browser developed by Google, first released in 2008.
+
 
