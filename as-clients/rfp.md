@@ -88,7 +88,7 @@ TBD
 | Stephen Neale | Front end developer         |
 | Drew Petten   | Head of project design      |
 | Matt Lebl     | Co-op student               |
-| Samuel Gao    |                             |
+| Samuel Gao    | Back end developer          |
 
 ## (9.0) Glossary of terms
 
