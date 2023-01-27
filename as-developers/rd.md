@@ -44,19 +44,31 @@ _some sort of table here..._
 
 ## 3 System Features
 
-### 3.1 Major Feature 1
+### 3.1 Courses
+
+_this section describes the functionality of students belonging to courses, profs owning a course,
+students having a homepage where they can see their courses. also, here is where we should chat
+about the software adaptation (frecency) feature we were talking about._
 
 #### 3.1.1 Description and Priority
 
 #### 3.1.2 Functional Requirements
 
-### 3.2 Major Feature 2
+### 3.2 Course Content
+
+_this section describes the functionality of professors posting notes to their courses, including
+special assignment notes that students can upload submissions to. also, here is where we mention
+that professors can assign grades to individual student submissions, and students can see what
+grade they got for individual things._
 
 #### 3.2.1 Description and Priority
 
 #### 3.2.2 Functional Requirements
 
-### 3.3 Major Feature 3
+### 3.3 Grades
+
+_this section describes the funcitonality of students being able to see all their graded items for
+a course in one place, spreadsheet style._
 
 #### 3.3.1 Description and Priority
 
