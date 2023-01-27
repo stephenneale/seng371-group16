@@ -15,7 +15,11 @@ _todo: table of contents_ at end when were done, Drew can tackle this
 
 ### 1.1 Purpose
 
+Requirements Document (referred to as RD) 1.0, highlights the functionality of Dimspace, an easy to use online web application for the delivery UVic course content. Students at UVic find the currently in use "Brightspace" web app to be slow and difficult to use, so a new intuitive software solution is needed to streamline the online course delivery process.
+
 ### 1.2 Project Scope
+
+The scope of this project is to alleviate the confusing layout of Brightspace, and to cut down on the amount of time it takes for students to find lecture slides, assignment deadlines, and grades for their courses. As the majority of courses at UVic provide content online, a system with an easier to use interface would greatly cut down on student confusion. The new web app will similarly host all course content, grades, and deadlines as the current service. It is yet to be determined if migration of existing course data to a new database would be required, or the current database can be repurposed.
 
 ### 1.3 Glossary of Terms
 
