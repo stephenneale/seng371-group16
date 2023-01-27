@@ -9,19 +9,18 @@ Requirements Document
 
 ## Table of Contents
 
-_todo: table of contents_
+_todo: table of contents_ at end when were done, Drew can tackle this
 
 ## 1 Introduction
 
 ### 1.1 Purpose
+ 
 
 ### 1.2 Project Scope
 
 ### 1.3 Glossary of Terms
 
 _some sort of table here..._
-
-### 1.4 References
 
 ### 1.5 Overview
 
