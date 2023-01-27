@@ -5,7 +5,7 @@ Requirements Document
 
 | Version | When            | Who                    | What                                      |
 | ---     | ---             | ---                    | ---                                       |
-| v1.0    | 2023-01-27      | Client team            | Initial drafting                          |
+| v1.0    | 2023-01-27      | Developer team         | Initial drafting                          |
 
 ## Table of Contents
 
