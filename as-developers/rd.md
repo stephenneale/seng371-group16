@@ -59,12 +59,15 @@ about the software adaptation (frecency) feature we were talking about._
 
 ### 3.2 Course Content
 
-_this section describes the functionality of professors posting notes to their courses, including
-special assignment notes that students can upload submissions to. also, here is where we mention
-that professors can assign grades to individual student submissions, and students can see what
-grade they got for individual things._
-
 #### 3.2.1 Description and Priority
+
+On any of their courses, instructors may post notes that are visible to students. These notes can
+contain arbitrary attachment files (e.g. PDF lecture slides, Excel spreadsheets, etc). Additionally,
+some of these notes can be designated as Assignment notes. Students may upload their own files to
+these assignment notes, and professors can view everything that each student uploaded, and respond
+to each of these submissions with grades and feedback. Students can only view the files they have
+submitted and the grades they received on their own work (students can't see each others submissions
+or grades).
 
 #### 3.2.2 Functional Requirements
 
