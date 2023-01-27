@@ -14,7 +14,6 @@ _todo: table of contents_ at end when were done, Drew can tackle this
 ## 1 Introduction
 
 ### 1.1 Purpose
- 
 
 ### 1.2 Project Scope
 
@@ -22,7 +21,7 @@ _todo: table of contents_ at end when were done, Drew can tackle this
 
 _some sort of table here..._
 
-### 1.5 Overview
+### 1.4 Overview
 
 ## 2 Overall Description
 
