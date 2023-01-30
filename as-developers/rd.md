@@ -71,6 +71,21 @@ or grades).
 
 #### 3.2.2 Functional Requirements
 
+REQ-2-1: Instructors may post notes (discrete bulletin style messages) to their course pages.
+
+REQ-2-2: Instructors may add arbitrary file attachments to these notes that may be viewed and
+downloaded by students
+
+REQ-2-3: Students see all notes that instructors post on course pages in reverse chronological
+order on the respective course page
+
+REQ-2-4: Instructors may designate specific notes to accept assignment submissions. Students can upload
+files to these assignment notes, which are in turn visible to the instructor. These submissions
+are visible only to the student who uploaded them, and the instructor.
+
+REQ-2-5: Instructors may assign grades (decimal number from 0.0 to 100.0) to each student's submission,
+which the student can see in the place where they submitted their assignment.
+
 ### 3.3 Grades
 
 _this section describes the funcitonality of students being able to see all their graded items for
