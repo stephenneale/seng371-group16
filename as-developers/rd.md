@@ -93,7 +93,8 @@ a course in one place, spreadsheet style._
 ## 5 Other Non-Functional Requirements
 
 ### 5.1 Performance Requirements
-
+The system needs to run at high speeds, 24/7, with low failure rate. Due to the students needing a reliable system, it should be stress tested for 160+ hours a week and a capacity of 2500+ students at one time. System updates must happen nelive or nearly live as this ensures students can upload or recieve assignments at the intended time. 
 ### 5.2 Security Requirements
-
+Account and data secuirty are important as the system will be holding data of students such as names, student number, email and grades. The system will also be holding the class lectures and notes/assignments created by professors at the school which needs to protected.
 ### 5.3 Software Quality Attributes
+Modifiability, scalability, simple to use
