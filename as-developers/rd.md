@@ -99,11 +99,30 @@ a course in one place, spreadsheet style._
 
 ### 4.1 User Interfaces
 
+The user interface is the primary interface of this system, as it is otherwise quite self-contained.
+Students and instructors access the system by way of a web-app, which shows (in the case of students)
+all courses that they are registered to and can view, and (in the case of instructors) all courses
+that they administer. Users can interact with this in a standard web-app fashion (point with mouse
+pointer and click, keyboard, etc), as a later-stage goal this interface should be accessible to users
+with a wide variety of ability. In particular, it should play nice with screen readers, and shouldn't
+communicate essential information using colour in a way that would cause difficulties for people with
+colour blindness.
+
 ### 4.2 Hardware Interfaces
+
+Given that this is primarily a software system, hardware details will be left to a cloud service vendor
+such as Amazon AWS, Google Cloud, or Microsoft Azure. We only require that the service be performant (as
+described in section 5 of this document), which does involve hardware considerations, but those are outside
+the scope of this document.
 
 ### 4.3 Software Interfaces
 
+The system will interface with a database to durably store information.
+
 ### 4.4 Communications Interfaces
+
+The system will be accessible through the Internet, so that students and instructors can view their
+courses from anywhere with an Internet connection.
 
 ## 5 Other Non-Functional Requirements
 
