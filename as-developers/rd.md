@@ -101,9 +101,9 @@ a course in one place, spreadsheet style._
 
 #### 3.3.2 Functional Requirements
 
-### 3.5 Self-adaptation
+### 3.4 Self-adaptation
 
-#### 3.5.1 Description and Priority
+#### 3.4.1 Description and Priority
 
 The system should adapt to patterns it observes in its users' behaviour in order to make their use
 of the software more convenient. It should provide quick links to places within the site (notes,
@@ -112,12 +112,12 @@ the system should continually test at what times users are most receptive to not
 upcoming deadlines, and adjust email notifications to be sent at times that users open them most
 reliably.
 
-#### 3.5.2 Functional Requirements
+#### 3.4.2 Functional Requirements
 
-REQ-5-1: The user's homepage should have a list of links generated based on what they visit both
+REQ-4-1: The user's homepage should have a list of links generated based on what they visit both
 frequently and recently, based on some reasonable implementation of the "frecency" algorithm.
 
-REQ-5-2: Users should be reminded of upcoming deadlines by email, and the system should keep track
+REQ-4-2: Users should be reminded of upcoming deadlines by email, and the system should keep track
 of what email notification times are most likely to correlate with system interaction shortly after
 delivery. Then, notification delivery times should be tuned closer to these times.
 
