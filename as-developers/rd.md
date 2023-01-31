@@ -89,6 +89,9 @@ are visible only to the student who uploaded them, and the instructor.
 REQ-2-5: Instructors may assign grades (decimal number from 0.0 to 100.0) to each student's submission,
 which the student can see in the place where they submitted their assignment.
 
+REQ-2-6: Instructors may optionally set a due date for assignments, after which students cannot
+submit anything further.
+
 ### 3.3 Grades
 
 _this section describes the funcitonality of students being able to see all their graded items for
@@ -97,6 +100,26 @@ a course in one place, spreadsheet style._
 #### 3.3.1 Description and Priority
 
 #### 3.3.2 Functional Requirements
+
+### 3.5 Self-adaptation
+
+#### 3.5.1 Description and Priority
+
+The system should adapt to patterns it observes in its users' behaviour in order to make their use
+of the software more convenient. It should provide quick links to places within the site (notes,
+assignments, other pages) that users access either often, or recently. ("Frecently") Additionally,
+the system should continually test at what times users are most receptive to notifications about
+upcoming deadlines, and adjust email notifications to be sent at times that users open them most
+reliably.
+
+#### 3.5.2 Functional Requirements
+
+REQ-5-1: The user's homepage should have a list of links generated based on what they visit both
+frequently and recently, based on some reasonable implementation of the "frecency" algorithm.
+
+REQ-5-2: Users should be reminded of upcoming deadlines by email, and the system should keep track
+of what email notification times are most likely to correlate with system interaction shortly after
+delivery. Then, notification delivery times should be tuned closer to these times.
 
 ## 4 External Interface Requirements
 
