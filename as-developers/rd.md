@@ -49,13 +49,16 @@ _some sort of table here..._
 
 ### 3.1 Courses
 
-_this section describes the functionality of students belonging to courses, profs owning a course,
-students having a homepage where they can see their courses. also, here is where we should chat
-about the software adaptation (frecency) feature we were talking about._
-
 #### 3.1.1 Description and Priority
 
+There are two main account types for the courses section, students and instructors. A student account will be able to view and access course content for only courses that they are registered in. The homepage consists of a catalouge of courses that the student has registered in. The instructors account will only have access to courses that they own and will be able to control what the students have access to with-in their own course. They will also have a similar homepage which displays a catalouge of courses which they own. This feauture is of **high priority**.
 #### 3.1.2 Functional Requirements
+
+REQ-1-1: Each homepage must only show courses that a student is registered in or an intructor owns
+
+REQ-1-2: Each course must display the course name, course number and the section that the student belongs to
+
+REQ-1-3: If a course is dropped by a student, they can no longer view that course on their homepage catalouge
 
 ### 3.2 Course Content
 
@@ -67,7 +70,7 @@ some of these notes can be designated as Assignment notes. Students may upload t
 these assignment notes, and professors can view everything that each student uploaded, and respond
 to each of these submissions with grades and feedback. Students can only view the files they have
 submitted and the grades they received on their own work (students can't see each others submissions
-or grades).
+or grades). This feature if of **high priority**.
 
 #### 3.2.2 Functional Requirements
 
@@ -127,8 +130,11 @@ courses from anywhere with an Internet connection.
 ## 5 Other Non-Functional Requirements
 
 ### 5.1 Performance Requirements
-The system needs to run at high speeds, 24/7, with low failure rate. Due to the students needing a reliable system, it should be stress tested for 160+ hours a week and a capacity of 2500+ students at one time. System updates must happen nelive or nearly live as this ensures students can upload or recieve assignments at the intended time. 
+
+The system needs to run at high speeds, 24/7, with low failure rate. Due to students needing a reliable system, it should be stress tested for 160+ hours a week and a capacity of 2500+ students at one time. System updates must happen live or nearly live as this ensures students will not need to worry about down times interupting their studies. 
 ### 5.2 Security Requirements
+
 Account and data secuirty are important as the system will be holding data of students such as names, student number, email and grades. The system will also be holding the class lectures and notes/assignments created by professors at the school which needs to protected.
 ### 5.3 Software Quality Attributes
-Modifiability, scalability, simple to use
+
+The system needs to be modifiable and adaptable because this ensures the longetivity of the software as it can be evolved and kept up to date with new requirtments and features. Scalaiblity is also a key component as the number of students at post-secondary institutions can be large. 
