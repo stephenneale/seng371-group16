@@ -80,7 +80,7 @@ some of these notes can be designated as Assignment notes. Students may upload t
 these assignment notes, and professors can view everything that each student uploaded, and respond
 to each of these submissions with grades and feedback. Students can only view the files they have
 submitted and the grades they received on their own work (students can't see each other's submissions
-or grades). This feature if of **high priority**.
+or grades). This feature is of **high priority**.
 
 #### 3.2.2 Functional Requirements
 
