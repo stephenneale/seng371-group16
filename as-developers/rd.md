@@ -10,6 +10,47 @@ Requirements Document
 ## Table of Contents
 
 _todo: table of contents_ at end when were done, Drew can tackle this
+<!-- TOC -->
+* [Requirements Document](#requirements-document)
+  * [Document Revisions](#document-revisions)
+  * [Table of Contents](#table-of-contents)
+  * [1 Introduction](#1-introduction)
+    * [1.1 Purpose](#11-purpose)
+    * [1.2 Project Scope](#12-project-scope)
+    * [1.3 Glossary of Terms](#13-glossary-of-terms)
+    * [1.4 Overview](#14-overview)
+  * [2 Overall Description](#2-overall-description)
+    * [2.1 Product Perspective](#21-product-perspective)
+    * [2.2 Product Features](#22-product-features)
+    * [2.3 User Classes and Characteristics](#23-user-classes-and-characteristics)
+    * [2.4 Operating Environment](#24-operating-environment)
+    * [2.5 Design and Implementation Constraints](#25-design-and-implementation-constraints)
+    * [2.6 Assumptions and Dependencies](#26-assumptions-and-dependencies)
+      * [2.6.1 Assumptions](#261-assumptions)
+      * [2.6.2 Dependencies](#262-dependencies)
+  * [3 System Features](#3-system-features)
+    * [3.1 Courses](#31-courses)
+      * [3.1.1 Description and Priority](#311-description-and-priority)
+      * [3.1.2 Functional Requirements](#312-functional-requirements)
+    * [3.2 Course Content](#32-course-content)
+      * [3.2.1 Description and Priority](#321-description-and-priority)
+      * [3.2.2 Functional Requirements](#322-functional-requirements)
+    * [3.3 Grades](#33-grades)
+      * [3.3.1 Description and Priority](#331-description-and-priority)
+      * [3.3.2 Functional Requirements](#332-functional-requirements)
+    * [3.4 Self-adaptation](#34-self-adaptation)
+      * [3.4.1 Description and Priority](#341-description-and-priority)
+      * [3.4.2 Functional Requirements](#342-functional-requirements)
+  * [4 External Interface Requirements](#4-external-interface-requirements)
+    * [4.1 User Interfaces](#41-user-interfaces)
+    * [4.2 Hardware Interfaces](#42-hardware-interfaces)
+    * [4.3 Software Interfaces](#43-software-interfaces)
+    * [4.4 Communications Interfaces](#44-communications-interfaces)
+  * [5 Other Non-Functional Requirements](#5-other-non-functional-requirements)
+    * [5.1 Performance Requirements](#51-performance-requirements)
+    * [5.2 Security Requirements](#52-security-requirements)
+    * [5.3 Software Quality Attributes](#53-software-quality-attributes)
+<!-- TOC -->
 
 ## 1 Introduction
 
