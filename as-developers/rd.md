@@ -91,8 +91,18 @@ The centralized course delivery system to be developed will serve as a replaceme
 The system will serve as a centralized platform for teachers to deliver course content and to collect assignment submissions from students. The system will have a dedicated page for each course a student is registered in. These pages will display lecture slides and assignments in reverse chronological order for ease of navigation.
 
 ### 2.3 User Classes and Characteristics
+There will be two types of users using this system: the student and instructor. The student class will have view-only permissions for most of the objects except for uploading assignments. The instructor class will be able to view and modify the objects. 
+
+#### 2.3.1 Student Users
+Student users can view all the objects that have been granted the access from the instructor user. In addition, a student user can upload and change the files under the 'Assignment' tab under the Course Content section within the starting and ending time assigned by the instructor class. 
+
+#### 2.3.2 Instructor Users
+Instructor users will have the permission to modify all the objects. They will be able to upload files under the Course Content section and assign a starting and ending date to each object under the section. They will also be able to input grade numbers under the Grade section and assign a formula of how the weight achieved is automatically calculated. 
 
 ### 2.4 Operating Environment
+- Hardware platform: The system can be accessed using common web browser apps on both PC's and portable devices. The web browser apps need to support basic HTML and JavaScript extensions.
+- Operating system and version
+ 
 
 ### 2.5 Design and Implementation Constraints
 
