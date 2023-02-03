@@ -104,12 +104,10 @@ submit anything further.
 
 ### 3.3 Grades
 
-_this section describes the functionality of students being able to see all their graded items for
-a course in one place, spreadsheet style._
-
 #### 3.3.1 Description and Priority
-
+This feature must allow the user to see the grade number for all the items that has been assigned a grade by the instructor. When the 'grade' tab is clicked, all the graded items will be presneted using a spreadsheet style. In additon, a instructor user should have the permission to input a grade number for an item but a student user will only have the permission to view the items that have already been assigned a grade by the instructor. This feature is off **hight priority**.
 #### 3.3.2 Functional Requirements
+REQ-3-1: 
 
 ### 3.4 Self-adaptation
 
