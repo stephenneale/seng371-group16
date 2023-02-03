@@ -111,9 +111,9 @@ The system will serve as a centralized platform for teachers to deliver course c
 There are two main account types for the courses section, students and instructors. A student account will be able to view and access course content for only courses that they are registered in. The homepage consists of a catalogue of courses that the student has registered in. The instructors account will only have access to courses that they own and will be able to control what the students have access to with-in their own course. They will also have a similar homepage which displays a catalogue of courses which they own. This feature is of **high priority**.
 #### 3.1.2 Functional Requirements
 
-REQ-1-1: Each homepage must only show courses that a student is registered in or an instructor owns
+REQ-1-1: Students' homepages should show exactly the courses that they are registered in, and instructors' homepages should show exactly the courses that they administer
 
-REQ-1-2: Each course must display the course name, course number and the section that the student belongs to
+REQ-1-2: Each course must display the course name, course number, and the section that the student belongs to
 
 REQ-1-3: If a course is dropped by a student, they can no longer view that course on their homepage catalogue
 
@@ -214,11 +214,11 @@ courses from anywhere with an Internet connection.
 
 ### 5.1 Performance Requirements
 
-The system needs to run at high speeds, 24/7, with low failure rate. Due to students needing a reliable system, it should be stress tested for 160+ hours a week and a capacity of 2500+ students at one time. System updates must happen live or nearly live as this ensures students will not need to worry about downtimes interrupting their studies.
+The system needs to run at high speeds, 24/7, with low failure rate. Since students need a reliable system, it should be stress tested for 160+ hours a week and a capacity of 2500+ students at one time. System updates must happen without appreciable downtime, to ensure that students' studies will not be adversely affected.
 
 ### 5.2 Security Requirements
 
-Account and data security are important as the system will be holding data of students such as names, student number, email and grades. The system will also be holding the class lectures and notes/assignments created by professors at the school which needs to protected.
+Account and data security are important as the system will store students' personal and private information (e.g. their names, student numbers, email addresses, and grades). The system will also store copyrighted and otherwise private information created by professors (notes, lectures, and assignments), and students (mainly assignment submissions).
 
 ### 5.3 Software Quality Attributes
 
