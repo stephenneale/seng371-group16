@@ -9,7 +9,6 @@ Requirements Document
 
 ## Table of Contents
 
-_todo: table of contents_ at end when were done, Drew can tackle this
 <!-- TOC -->
 * [Requirements Document](#requirements-document)
   * [Document Revisions](#document-revisions)
