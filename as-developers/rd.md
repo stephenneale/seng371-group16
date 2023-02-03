@@ -81,7 +81,14 @@ The scope of this project is to alleviate the confusing layout of Brightspace, a
 
 ### 2.1 Product Perspective
 
+The centralized course delivery system to be developed will serve as a replacement for the current Brightspace system at UVic. The perspective for this system is outlined below:
+
+- The system will replace Brightspace for managing course grades, schedules, assignments, lecture videos and pdfs, and other course deliverables.
+- The system will be accessed by teachers and students on a variety of electronic devices via their netlink ID and password on a single centralized webapp.
+
 ### 2.2 Product Features
+
+The system will serve as a centralized platform for teachers to deliver course content and to collect assignment submissions from students. The system will have a dedicated page for each course a student is registered in. These pages will display lecture slides and assignments in reverse chronological order for ease of navigation.
 
 ### 2.3 User Classes and Characteristics
 
