@@ -25,11 +25,11 @@ The scope of this project is to alleviate the confusing layout of Brightspace, a
 
 | Term        | Definition                                                                                          |
 |:------------|:----------------------------------------------------------------------------------------------------|
-| Assignment  | In the context of this document, a special type of Note that allows for student submissions.        |
+| Assignment  | In the context of this document, a special type of Note that allows for student submissions         |
 | Brightspace | The current LMS in use at the University of Victoria                                                |
-| Dimspace    | The new proposed LMS—the subject of this RD.                                                        |
+| Dimspace    | The new proposed LMS—the subject of this RD                                                         |
 | Frecency    | A metric that combines frequency and recency into one                                               |
-| Instructors | A group of users that own Courses and can post information there for Students to see.               |
+| Instructors | A group of users that own Courses and can post information there for Students to see                |
 | LMS         | Learning Management System—a software system to distribute course materials and facilitate learning |
 | Note        | In the context of this document, a discrete bulletin-style message posted to a Course               |
 | Students    | A group of users that are registered to Courses and can see the content posted therein              |
