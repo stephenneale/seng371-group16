@@ -103,8 +103,26 @@ Instructor users will have the permission to modify all the objects. They will b
 - Hardware platform: The system can be accessed using common web browser apps on both PC's and portable devices. The web browser apps need to support basic HTML and JavaScript extensions.
 - Operating system and version
  
-
 ### 2.5 Design and Implementation Constraints
+
+_Hardware constraints_
+
+Students generally have access to relatively recent hardware and modern browsers, so support for older browsers such as
+Internet Explorer is not necessary. Since we will rely on cloud services for hosting, we will not consider hardware
+requirements—this responsibility will be left to the cloud provider.
+
+_Interaction with Third-Party Applications_
+
+The software may make use of third-party software libraries for development purposes as long as there is no concern of
+major security issues. Otherwise, the webapp will obviously interact with third-party browsers, as is consistent with
+the reality of frontend web development.
+
+_System Maintenance_
+
+The vendor assures that the system will be maintained in good working order so that neither students nor instructors have
+issues with accessing and using the system normally. Additionally, regular maintenance will be performed in a manner that
+does not cause major disruptions. When the system needs to be taken offline for a noticeable amount of time, this will be
+done during late-night hours.
 
 ### 2.6 Assumptions and Dependencies
 
