@@ -128,7 +128,29 @@ done during late-night hours.
 
 #### 2.6.1 Assumptions
 
+_Availability of Cloud Computing and Storage_
+
+The application will be designed and developed with cloud computing in mind, and additionally the responsibility of
+provisioning and maintaining physical hardware will be offloaded to a cloud vendor. Should requirements change and cloud
+compute/storage not be available, time and cost estimates will change.
+
+_Internet Connection_
+
+In order for the service to function correctly, it must remain connected to the Internet to be available to students
+and instructors. Additionally, the assumption is made that all users also have access to the Internet—it'll be a basic
+requirement for accessing the application.
+
+_Scheduling_
+
+It is assumed that a reasonable schedule for the completion of this project will be shared in the near future.
+
 #### 2.6.2 Dependencies
+
+_Third-Party Dependencies_
+
+Development efforts will make use of third-party libraries—as is common in the field of software development—in order to
+most efficiently develop robust and maintainable code. This is a reasonable dependency, and only well-established and
+widely-used software libraries will be depended upon.
 
 ## 3 System Features
 
