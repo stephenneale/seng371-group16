@@ -162,10 +162,10 @@ submit anything further.
 ### 3.3 Grades
 
 #### 3.3.1 Description and Priority
-This feature must allow the user to see the grade number for all the items that has been assigned a grade by the instructor. When the 'Grade' tab is clicked, all the graded items will be presneted using a spreadsheet style. Each item should have the following criterias: item name, grade, and weight achieved. In additon, a instructor user should have the permission to input a grade number for an item and system will automatically calculate the weight achieved, but a student user will only have the permission to view the items that have already been assigned a grade by the instructor. This feature is off **hight priority**.
+This feature must allow the user to see the grade number for all the items that have been assigned a grade by the instructor. When the 'Grade' tab is clicked, all the graded items will be presented using a spreadsheet style. Each item should have the following information: item name, grade, and weight achieved. In addition, a instructor user should have permission to input a grade number for an item, and system will automatically calculate the weight achieved, but a student user will only have the permission to view the items that have already been assigned a grade by the instructor. This feature is of **high priority**.
 
 #### 3.3.2 Functional Requirements
-REQ-3-1: Students see all the graded items' item name, grade and weight achieved on one page in chronological order when navigated to 'Grade' page. 
+REQ-3-1: Students see all the graded items' item names, grades and weights achieved on one page in chronological order on the 'Grades' page. 
 
 REQ-3-2: Instructors can input grade number (decimal number from 0.0 to 100.0) in each item.
 
