@@ -101,7 +101,7 @@ Instructor users will have the permission to modify all the objects. They will b
 
 ### 2.4 Operating Environment
 - Hardware platform: The system can be accessed using common web browser apps on both PC's and portable devices. The web browser apps need to support basic HTML and JavaScript extensions.
-- Operating system and version
+- Operating system and version: The system need to be accessible on the following operating systems: Windows, Mac OS, and Linux/Unix.
  
 ### 2.5 Design and Implementation Constraints
 
@@ -115,7 +115,7 @@ _Interaction with Third-Party Applications_
 
 The software may make use of third-party software libraries for development purposes as long as there is no concern of
 major security issues. Otherwise, the webapp will obviously interact with third-party browsers, as is consistent with
-the reality of frontend web development.
+the reality of frontend web development. However, some browser extensions that may cause safety issues will not be allowed to interact with. 
 
 _System Maintenance_
 
