@@ -64,6 +64,6 @@ functionality is available in the repository [here](as-developers/backend).
 
 ### Frontend
 
-The frontend will be written in [Python](https://www.python.org) using the (Django)[https://www.djangoproject.com]
+The frontend will be written in [Python](https://www.python.org) using the [Django](https://www.djangoproject.com)
 framework. A preliminary webapp with some "hello, world" functionality is available in the repository
 [here](as-developers/frontend).
