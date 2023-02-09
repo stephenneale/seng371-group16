@@ -27,7 +27,7 @@
 
 		$ python3 manage.py runserver 8000
 
-	Now the site should be accessible at http://localhost:8000
+	Now the site should be accessible at http://localhost:8000/dimspace
 
 	If you are accessing the webpage from a different machine, launch the django app on the machines IP with:
 
@@ -35,6 +35,6 @@
 	
 	This will make the webapp accessible via the machines IP. 
 
-    E.g: http://SERVER.IP.HERE:8000
+    E.g: http://SERVER.IP.HERE:8000/dimspace
 
 
