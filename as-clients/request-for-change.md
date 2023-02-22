@@ -4,7 +4,7 @@
 
 | **Project Name:** Atlantean Banking| **Change Name:** Risk Change Authentication| **Number:** 01 |
 |------------------------------------|--------------------------------------------|----------------|
-| **Requested By:** | **Contact:** | **Date:** |
+| **Requested By:** Andrew Petten | **Contact:** andrewpetten@uvic.ca| **Date:** February 21, 2023|
 
 ### Description of Change: 
 
