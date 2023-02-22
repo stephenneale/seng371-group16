@@ -2,9 +2,9 @@
 
 ## Change Description
 
-| **Project Name:** Atlantean Banking| **Change Name:** Risk Change Authentication| **Number:** 01 |
-|------------------------------------|--------------------------------------------|----------------|
-| **Requested By:** Andrew Petten | **Contact:** andrewpetten@uvic.ca| **Date:** February 21, 2023|
+| **Project Name:** Atlantean Banking | **Change Name:** Risk Change Authentication | **Number:** 01              |
+|-------------------------------------|---------------------------------------------|-----------------------------|
+| **Requested By:** Andrew Petten     | **Contact:** andrewpetten@uvic.ca           | **Date:** February 21, 2023 |
 
 ### Description of Change: 
 
@@ -17,16 +17,16 @@
 ### Impact of not Responding to change (and Reason Why): 
 
 | **Date Needed:** | **Approval of Request:** | **Date:** |
-| -----------------|--------------------------|-----------|
+|------------------|--------------------------|-----------|
 
-| **Change Impact** |
-|-------------------|
-| Tasks/Scope Affected: |
-| Cost of Evaluation: |
-| Risk Evaluation: |
-| Quality Evaluation: |
-| Additional Resources: |
-| Duration: |
-| Additional Effort: |
-| Impact on Deadline: |
+| **Change Impact**                |
+|----------------------------------|
+| Tasks/Scope Affected:            |
+| Cost of Evaluation:              |
+| Risk Evaluation:                 |
+| Quality Evaluation:              |
+| Additional Resources:            |
+| Duration:                        |
+| Additional Effort:               |
+| Impact on Deadline:              |
 | Alternative and Reccomendations: |
