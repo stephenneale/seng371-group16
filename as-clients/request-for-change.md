@@ -38,23 +38,28 @@ critical that our clients' money and information stays safe. At the same time, i
 regular users of our online banking service are not frustrated by excessive login challenges, when usage patterns and
 other indicators can clearly show that their attempts to access their own accounts are legitimate.
 
-### Priority (High, Medium or Low):
+### Priority (Select One):
+- [ ] Low Priority 
+- [ ] Medium Priority
+- [x] High Priority 
+
 
 ### Impact on Deliverables:
+This is going to push back deliverables and the deployment of this application by at least 2 - 4 weeks. 
 
 ### Impact of not Responding to change (and Reason Why): 
+Not responding to this change could result in dire consequences. Without proper authentication, clients of the bank could have their personal information leaked or have their money stolen by malicious hackers. 
+| **Date Needed:** April 12, 2023 | **Approval of Request:** John Doe | **Date:** February 22, 2023        |
+|---------------------------------|-----------------------------------|------------------------------------|
 
-| **Date Needed:** | **Approval of Request:** | **Date:** |
-|------------------|--------------------------|-----------|
-
-| **Change Impact**                |
-|----------------------------------|
-| Tasks/Scope Affected:            |
-| Cost of Evaluation:              |
-| Risk Evaluation:                 |
-| Quality Evaluation:              |
-| Additional Resources:            |
-| Duration:                        |
-| Additional Effort:               |
-| Impact on Deadline:              |
-| Alternative and Reccomendations: |
+| **Change Impact**                                                                                        |
+|----------------------------------------------------------------------------------------------------------|
+| Tasks/Scope Affected: No tasks affected as this will be completed at the end of the project              |
+| Cost of Evaluation: $75 000.00                                                                           |
+| Risk Evaluation: Low                                                                                     |
+| Quality Evaluation: High                                                                                 |
+| Additional Resources: Captcha, SMS messenger                                                             |
+| Duration: 2 - 4 weeks                                                                                    |
+| Additional Effort: None Required                                                                         |
+| Impact on Deadline: 2 - 4 weeks longer                                                                   |
+| Alternative and Recommendations: It's recommended that you complete this as one of the last deliverables |
