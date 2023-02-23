@@ -43,12 +43,13 @@ other indicators can clearly show that their attempts to access their own accoun
 - [ ] Medium Priority
 - [x] High Priority 
 
-
 ### Impact on Deliverables:
 This is going to push back deliverables and the deployment of this application by at least 2 - 4 weeks. 
 
 ### Impact of not Responding to change (and Reason Why): 
-Not responding to this change could result in dire consequences. Without proper authentication, clients of the bank could have their personal information leaked or have their money stolen by malicious hackers. 
+Not responding to this change could result in dire consequences. Without proper authentication, clients of the bank
+could have their personal information leaked or have their money stolen by malicious hackers.
+
 | **Date Needed:** April 12, 2023 | **Approval of Request:** John Doe | **Date:** February 22, 2023        |
 |---------------------------------|-----------------------------------|------------------------------------|
 
