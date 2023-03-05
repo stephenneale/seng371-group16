@@ -6,49 +6,60 @@ Requirements Document
 | Version | When            | Who                    | What                                      |
 | ---     | ---             | ---                    | ---                                       |
 | v1.0    | 2023-01-27      | Developer team         | Initial drafting                          |
-
+| v2.0    | 2023-03-04      | Andrew                 | Added changes from RFC                    |
 ## Table of Contents
 
 <!-- TOC -->
-* [Requirements Document](#requirements-document)
-  * [Document Revisions](#document-revisions)
-  * [Table of Contents](#table-of-contents)
-  * [1 Introduction](#1-introduction)
-    * [1.1 Purpose](#11-purpose)
-    * [1.2 Project Scope](#12-project-scope)
-    * [1.3 Glossary of Terms](#13-glossary-of-terms)
-    * [1.4 Overview](#14-overview)
-  * [2 Overall Description](#2-overall-description)
-    * [2.1 Product Perspective](#21-product-perspective)
-    * [2.2 Product Features](#22-product-features)
-    * [2.3 User Classes and Characteristics](#23-user-classes-and-characteristics)
-    * [2.4 Operating Environment](#24-operating-environment)
-    * [2.5 Design and Implementation Constraints](#25-design-and-implementation-constraints)
-    * [2.6 Assumptions and Dependencies](#26-assumptions-and-dependencies)
-      * [2.6.1 Assumptions](#261-assumptions)
-      * [2.6.2 Dependencies](#262-dependencies)
-  * [3 System Features](#3-system-features)
-    * [3.1 Courses](#31-courses)
-      * [3.1.1 Description and Priority](#311-description-and-priority)
-      * [3.1.2 Functional Requirements](#312-functional-requirements)
-    * [3.2 Course Content](#32-course-content)
-      * [3.2.1 Description and Priority](#321-description-and-priority)
-      * [3.2.2 Functional Requirements](#322-functional-requirements)
-    * [3.3 Grades](#33-grades)
-      * [3.3.1 Description and Priority](#331-description-and-priority)
-      * [3.3.2 Functional Requirements](#332-functional-requirements)
-    * [3.4 Self-adaptation](#34-self-adaptation)
-      * [3.4.1 Description and Priority](#341-description-and-priority)
-      * [3.4.2 Functional Requirements](#342-functional-requirements)
-  * [4 External Interface Requirements](#4-external-interface-requirements)
-    * [4.1 User Interfaces](#41-user-interfaces)
-    * [4.2 Hardware Interfaces](#42-hardware-interfaces)
-    * [4.3 Software Interfaces](#43-software-interfaces)
-    * [4.4 Communications Interfaces](#44-communications-interfaces)
-  * [5 Other Non-Functional Requirements](#5-other-non-functional-requirements)
-    * [5.1 Performance Requirements](#51-performance-requirements)
-    * [5.2 Security Requirements](#52-security-requirements)
-    * [5.3 Software Quality Attributes](#53-software-quality-attributes)
+- [Requirements Document](#requirements-document)
+  - [Document Revisions](#document-revisions)
+  - [Table of Contents](#table-of-contents)
+  - [1 Introduction](#1-introduction)
+    - [1.1 Purpose](#11-purpose)
+    - [1.2 Project Scope](#12-project-scope)
+    - [1.3 Glossary of Terms](#13-glossary-of-terms)
+    - [1.4 Overview](#14-overview)
+  - [2 Overall Description](#2-overall-description)
+    - [2.1 Product Perspective](#21-product-perspective)
+    - [2.2 Product Features](#22-product-features)
+    - [2.3 User Classes and Characteristics](#23-user-classes-and-characteristics)
+      - [2.3.1 Student Users](#231-student-users)
+      - [2.3.2 Instructor Users](#232-instructor-users)
+    - [2.4 Operating Environment](#24-operating-environment)
+    - [2.5 Design and Implementation Constraints](#25-design-and-implementation-constraints)
+    - [2.6 Assumptions and Dependencies](#26-assumptions-and-dependencies)
+      - [2.6.1 Assumptions](#261-assumptions)
+      - [2.6.2 Dependencies](#262-dependencies)
+  - [3 System Features](#3-system-features)
+    - [3.1 Courses](#31-courses)
+      - [3.1.1 Description and Priority](#311-description-and-priority)
+      - [3.1.2 Functional Requirements](#312-functional-requirements)
+    - [3.2 Course Content](#32-course-content)
+      - [3.2.1 Description and Priority](#321-description-and-priority)
+      - [3.2.2 Functional Requirements](#322-functional-requirements)
+    - [3.3 Grades](#33-grades)
+      - [3.3.1 Description and Priority](#331-description-and-priority)
+      - [3.3.2 Functional Requirements](#332-functional-requirements)
+    - [3.4 Self-adaptation](#34-self-adaptation)
+      - [3.4.1 Description and Priority](#341-description-and-priority)
+      - [3.4.2 Functional Requirements](#342-functional-requirements)
+    - [3.5 User Authentication](#35-user-authentication)
+      - [3.5.1 Description and Priority](#351-description-and-priority)
+      - [3.5.2 Functional Requirements](#352-functional-requirements)
+    - [3.6 User Profiles](#36-user-profiles)
+      - [3.6.1 Description and Priority](#361-description-and-priority)
+      - [3.6.2 Functional Requirements](#362-functional-requirements)
+    - [3.7 User Notifications](#37-user-notifications)
+      - [3.7.1 Description and Priority](#371-description-and-priority)
+      - [3.7.2 Functional Requirements](#372-functional-requirements)
+  - [4 External Interface Requirements](#4-external-interface-requirements)
+    - [4.1 User Interfaces](#41-user-interfaces)
+    - [4.2 Hardware Interfaces](#42-hardware-interfaces)
+    - [4.3 Software Interfaces](#43-software-interfaces)
+    - [4.4 Communications Interfaces](#44-communications-interfaces)
+  - [5 Other Non-Functional Requirements](#5-other-non-functional-requirements)
+    - [5.1 Performance Requirements](#51-performance-requirements)
+    - [5.2 Security Requirements](#52-security-requirements)
+    - [5.3 Software Quality Attributes](#53-software-quality-attributes)
 <!-- TOC -->
 
 ## 1 Introduction
@@ -73,7 +84,7 @@ The scope of this project is to alleviate the confusing layout of Brightspace, a
 | LMS         | Learning Management System—a software system to distribute course materials and facilitate learning |
 | Note        | In the context of this document, a discrete bulletin-style message posted to a Course               |
 | Students    | A group of users that are registered to Courses and can see the content posted therein              |
-
+| MFA         | Multi-factor Authentication                                                                         |
 
 ### 1.4 Overview
 
@@ -225,12 +236,39 @@ reliably.
 #### 3.4.2 Functional Requirements
 
 REQ-4-1: The user's homepage should have a list of links generated based on what they visit both
-frequently and recently, based on some reasonable implementation of the "frecency" algorithm.
+frequently and recently, based on some reasonable implementation of the "frequency" algorithm.
 
 REQ-4-2: Users should be reminded of upcoming deadlines by email, and the system should keep track
 of what email notification times are most likely to correlate with system interaction shortly after
 delivery. Then, notification delivery times should be tuned closer to these times.
 
+### 3.5 User Authentication
+
+#### 3.5.1 Description and Priority
+
+With different user types having access to the system, the system needs to have an authentication layer to prevent unauthorized access to the accounts. The authentication layer will include a MFA system that links an account to a cell phone number. The cell phone number will be unique to that account and can not be used for other account profiles. When attempting to log in on a new device, a text message will be sent to that unique cell phone number with a security code that must be entered before the user can log into the account. To avoid redundancy, the user will have the option to "Trust This Device" for 30 days. When a user goes through the MFA process on a new device, they will be granted an option to avoid using the MFA on that specific device only for 30 days so they do not need to go through this every time they log in. Users can have multiple trusted devices. This feature is of **high priority**. 
+
+#### 3.5.2 Functional Requirements
+
+REQ-5-1: ALl users have a cell phone that can receive text messages. The text message should take no longer then 1 minute to receive this message.
+
+REQ-5-2: The security code will expire in 5 minutes after the message has been sent out. If the code has not been used with-in that time span, the user will need to request a new security code.
+
+REQ-5-3: Users should be able to view a list of all their trusted devices and have an option to remove devices from the list. Users will be notified when a new device has been added or removed. 
+
+### 3.6 User Profiles
+
+#### 3.6.1 Description and Priority
+- andrew to do
+#### 3.6.2 Functional Requirements
+- andrew to do
+
+### 3.7 User Notifications
+
+#### 3.7.1 Description and Priority
+ - andrew to do
+#### 3.7.2 Functional Requirements
+- andrew to do
 ## 4 External Interface Requirements
 
 ### 4.1 User Interfaces
