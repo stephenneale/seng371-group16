@@ -7,6 +7,7 @@ Requirements Document
 | ---     | ---             | ---                    | ---                                       |
 | v1.0    | 2023-01-27      | Developer team         | Initial drafting                          |
 | v2.0    | 2023-03-04      | Andrew                 | Added changes from RFC                    |
+| v2.1    | 2023-03-05      | Andrew                 | Added changes from RFC                    |
 ## Table of Contents
 
 <!-- TOC -->
@@ -205,7 +206,7 @@ files to these assignment notes, which are in turn visible to the instructor. Th
 are visible only to the student who uploaded them, and the instructor.
 
 REQ-2-5: Instructors may assign grades (decimal number from 0.0 to 100.0) to each student's submission,
-which the student can see in the place where they submitted their assignment.
+which the student can see in the place where they submitted their assignment. Instructors will be able to assign a grade over 100.0 if needed. 
 
 REQ-2-6: Instructors may optionally set a due date for assignments, after which students cannot
 submit anything further.
@@ -259,16 +260,24 @@ REQ-5-3: Users should be able to view a list of all their trusted devices and ha
 ### 3.6 User Profiles
 
 #### 3.6.1 Description and Priority
-- andrew to do
+Users of the system will need to make profiles for their accounts. The User profile system will similar to the current Brightspace system that Uvic already has in place. Every profile will consist of a login username and password. They will also need their school email and have an option to add their primary emails to the account. This will help support security of the system as users will have ways to recover their accounts if needed and a space to check all trusted devices tied to the account. Profiles will also have options for profile pictures, a biography and a settings for basic account options. This feature is of **low priority**.  
 #### 3.6.2 Functional Requirements
-- andrew to do
+REQ-6-1: All users will need a school email given to them to create an account. This ensures no bots or outside users to use the system. 
+
+REQ-6-2: Users will need to a username and password to gain access to the system. If either are forgotten, there will be a recovery system using the emails given to the account. If the user does not have access to the given email, the school will have to intervene and reset their account for them after they verify the user is the owner of the profile.
 
 ### 3.7 User Notifications
 
 #### 3.7.1 Description and Priority
- - andrew to do
+The system will have a notification system that will alert users to due dates, announcements, submission verifications graded work and feedback on submissions. The notifications will be customizable in the user profiles so they only receive the notifications that they choose. There will be an option where users can set when they want to be notified for a specific due date. For examples: "Notify me 1 week before SENG 371 Project 2 is finished". This system will also integrate with the Self adaptation feature. Notifications can also be integrated with calender apps. This feature is of **low priority**.
 #### 3.7.2 Functional Requirements
-- andrew to do
+REQ-7-1: The notification system will need access to the users device notification system. Users will need to allow Dimspace to post notifications on their device
+
+REQ-7-2: The system will need to be allowed access to a users calender system
+
+REQ-7-3: The device will need to be connected to internet to receive the notification from Dimspace. If Dimspace notifications have been integrated to a users calender application, they will not need internet to receive the notification
+
+
 ## 4 External Interface Requirements
 
 ### 4.1 User Interfaces
@@ -306,7 +315,7 @@ The system needs to run at high speeds, 24/7, with low failure rate. Since stude
 
 ### 5.2 Security Requirements
 
-Account and data security are important as the system will store students' personal and private information (e.g. their names, student numbers, email addresses, and grades). The system will also store copyrighted and otherwise private information created by professors (notes, lectures, and assignments), and students (mainly assignment submissions).
+Account and data security are important as the system will store students' personal and private information (e.g. their names, student numbers, email addresses, and grades). The system will also store copyrighted and otherwise private information created by professors (notes, lectures, and assignments), and students (mainly assignment submissions). The system will integrate with the current security system that UVic already has in place with Brightspace. 
 
 ### 5.3 Software Quality Attributes
 
