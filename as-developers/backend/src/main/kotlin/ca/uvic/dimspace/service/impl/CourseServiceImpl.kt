@@ -7,12 +7,14 @@ import org.springframework.stereotype.Service
 @Service
 class CourseServiceImpl : CourseService {
 
+	val sampleCourse = Course(1, "EE 120", "Intro to Electrical Engineering", "Franz Kafka")
+
 	override fun getCourses(): List<Course> {
-		return listOf(Course(1, "SENG 371", "Software Evolution", "Shuja Mughal"))
+		return listOf(sampleCourse)
 	}
 
 	override fun getCourse(id: Int): Course? {
-		TODO("Not yet implemented")
+		return sampleCourse
 	}
 
 }
