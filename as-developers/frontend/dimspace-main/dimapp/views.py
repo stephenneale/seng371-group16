@@ -10,7 +10,10 @@ class Home(TemplateView):
 
     def get_context_data(self, **kwargs):
 
-        courses = requests.get(API_LINK+"courses", timeout=5).json()
+        try:
+            courses = requests.get(API_LINK+"courses", timeout=5).json()
+        except ValueError:
+            courses = []
 
         context = super().get_context_data(**kwargs)
         context['courses'] = courses
@@ -23,8 +26,14 @@ class CourseHome(TemplateView):
     def get_context_data(self, **kwargs):
 
         course_id = kwargs.get('course_id', -1)
-        course = requests.get(API_LINK+f"courses/{course_id}", timeout=5).json()
-        content = requests.get(API_LINK+f"content/{course_id}", timeout=5).json()
+        try:
+            course = requests.get(API_LINK+f"courses/{course_id}", timeout=5).json()
+        except ValueError:
+            course = []
+        try:
+            content = requests.get(API_LINK+f"content/{course_id}", timeout=5).json()
+        except ValueError:
+            content = []
 
         context = super().get_context_data(**kwargs)
         context['course'] = course
