@@ -41,16 +41,14 @@ active
     <div class="col courses border border-secondary rounded" style="width: 73.4%; float:left; margin-left: 20px; display: flex; flex-direction: column; padding-bottom: 25px;">
         <h4 style="margin: 15px;">Courses</h1>
         <div class="d-flex flex-row justify-content-around">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title" style="margin-bottom: 2em;">Course 1</h5>
-                    <p class="card-text">
-                        Course name<br>
-                        Section #
-                    </p>
-                    <a href="#" class="btn btn-primary stretched-link" style="float: right">View</a>
+            {% for course in courses %}
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="margin-bottom: 2em;">{{ course.code }}</h5>
+                        <a href="./course/{{ course.id }}" class="btn btn-primary stretched-link" style="float: right">View</a>
+                    </div>
                 </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

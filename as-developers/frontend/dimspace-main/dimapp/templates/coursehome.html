@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <nav aria-label="breadcrumb" style="margin-top: 15px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/dimspace">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ course.code }}</li>
+        </ol>
+    </nav>
+
+    <div class="text mt-3" style="margin-bottom: 2em;">
+        <h1>{{ course.code }}</h1>
+    </div>
+
+    <div class="col-3 announcements border border-secondary rounded" style="float:left; height: 500px; display: flex; flex-direction: column; overflow-y: auto;">
+        <h4 style="margin: 15px;">Content</h1>
+        <ul>
+            <li><a href="#">Lectures</a></li>
+            <li><a href="#">Assignments</a></li>
+            <li><a href="#">Labs</a></li>
+        </ul> 
+    </div>
+
+    <div class="col courses border border-secondary rounded" style="width: 73.4%; float:left; margin-left: 20px; display: flex; flex-direction: column; padding-bottom: 25px;">
+        <h4 style="margin: 15px;">Announcements</h1>
+        <div class="d-flex flex-column">
+            {% for content in content %}
+                <div class="p-2">
+                    <div class="card">
+                        <div class="card-body" style="width: 100%;">
+                            <h6 class="card-title" style="margin-bottom: 2em;">{{ content.author }}</h6>
+                            <p>{{content.message}}</p>
+                            <a href="#" class="btn btn-primary stretched-link" style="float: right">View</a>
+                            <p class="card-text"><small class="text-muted">Posted X mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
