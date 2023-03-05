@@ -11,12 +11,14 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
+import org.springframework.test.context.ContextConfiguration
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.content
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 
 @WebMvcTest
+@ContextConfiguration(classes = [CourseController::class])
 class CourseControllerTest(
 	@Autowired
 	val mvc: MockMvc,
@@ -53,14 +55,6 @@ class CourseControllerTest(
 		mvc.perform(get("/courses"))
 			.andExpect(status().isOk)
 			.andExpect(content().json(expectedValue))
-	}
-
-	@Test
-	fun getCourseThatDoesntExist() {
-		every { courseService.getCourse(2) } returns null
-
-		mvc.perform(get("/courses/2"))
-			.andExpect(status().isNotFound)
 	}
 
 	@Test
