@@ -28,5 +28,5 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        cd dimspace-main
+        cd as-developers/frontend/dimspace-main
         python3 manage.py test
