@@ -237,7 +237,7 @@ reliably.
 #### 3.4.2 Functional Requirements
 
 REQ-4-1: The user's homepage should have a list of links generated based on what they visit both
-frequently and recently, based on some reasonable implementation of the "frequency" algorithm.
+frequently and recently, based on some reasonable implementation of the "frecency" algorithm.
 
 REQ-4-2: Users should be reminded of upcoming deadlines by email, and the system should keep track
 of what email notification times are most likely to correlate with system interaction shortly after
