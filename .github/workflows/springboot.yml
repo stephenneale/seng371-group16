@@ -29,5 +29,5 @@ jobs:
         cache: maven
     - name: Build and Run Tests with Maven
       run: |
-      cd as-developers/backend
-      mvn -B package
+        cd as-developers/backend
+        mvn -B package
