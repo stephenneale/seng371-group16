@@ -21,3 +21,7 @@ This repository contains Group 16's work for SENG371 A02 - Group 16, Spring 2023
 ## DimSpace CI Status
 
 ![dimspace-ci](https://github.com/stephenneale/seng371-group16/actions/workflows/dimspace.yml/badge.svg)
+
+## SpringBoot CI with Maven
+
+![springboot-ci](https://github.com/stephenneale/seng371-group16/actions/workflows/springboot.yml/badge.svg)
