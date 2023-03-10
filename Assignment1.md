@@ -38,7 +38,7 @@ These aspects are also detailed in our [requirements document](as-developers/rd.
 
 The architecture for the application is illustrated with this diagram:
 
-̄![](as-developers/images/architecture.png)
+̄![](https://github.com/stephenneale/seng371-group16/raw/e3abecc3e59a4e7861fe0ae49a175b2caf5620da/as-developers/images/architecture.png)
 
 ## UI
 
