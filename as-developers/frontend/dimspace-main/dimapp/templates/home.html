@@ -5,6 +5,7 @@ active
 {% endblock %}
 
 {% block content %}
+{% load dimspace_extras %}
 <div class="container">
     <div class="text mt-5" style="margin-bottom: 2em;">
         <h1>Welcome to DimSpace</h1>
@@ -44,7 +45,10 @@ active
             {% for course in courses %}
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title" style="margin-bottom: 2em;">{{ course.code }}</h5>
+                        <h5 class="card-title" style="margin-bottom: 1em;">{{ course.code }}</h5>
+                        {% with course_info|index:forloop.counter0 as info %}
+                        <p style="margin-bottom: 2em;">{{info.name}}</p>
+                        {% endwith %}
                         <a href="./course/{{ course.id }}" class="btn btn-primary stretched-link" style="float: right">View</a>
                     </div>
                 </div>
