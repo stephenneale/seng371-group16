@@ -4,7 +4,8 @@ import requests
 
 
 # Change this link to your own deployment of the Spring backend
-API_LINK = "https://stephenneale-cautious-waddle-9jq4x7gr79j29pj-8080.preview.app.github.dev/"
+# For development and CI, the springboot backend is being hosted at the URL below
+API_LINK = "http://159.223.198.2:8080/"
 
 
 def get_from_api(endpoint: str):
