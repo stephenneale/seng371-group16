@@ -29,11 +29,11 @@ active
         </div>
     </div>
 
-    <div class="col-3 announcements border border-secondary rounded" style="float:left; height: 500px; display: flex; flex-direction: column; overflow-y: auto; margin-right: 20px">
+    <div class="col-3 announcements border border-secondary rounded" style="display: flex; flex-direction: column; padding-bottom: 25px; overflow-y: auto; margin-right: 20px; float: left;">
         <h4 style="margin: 15px;">Announcements</h1>
         <div class="card" style="margin-left: 15px; margin-right: 15px;">
             <div class="card-body">
-                <a href="#" class="stretched-link">Course 999</a><br>
+                <a href="#" class="stretched-link">EE 120</a><br>
                 Test Announcement...
             </div>
         </div>
@@ -49,7 +49,7 @@ active
                         {% with course_info|index:forloop.counter0 as info %}
                         <p style="margin-bottom: 2em;">{{info.name}}</p>
                         {% endwith %}
-                        <a href="./course/{{ course.id }}" class="btn btn-primary stretched-link" style="float: right">View</a>
+                        <a href="./course/{{ course.id }}/" class="btn btn-primary stretched-link" style="float: right">View</a>
                     </div>
                 </div>
             {% endfor %}
