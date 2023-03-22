@@ -39,6 +39,22 @@ class Home(TemplateView):
         return context
 
 
+class Grades(TemplateView):
+    """Grades page class"""
+    template_name = "grades.html"
+
+    def get_context_data(self, **kwargs):
+        """Get context for grades page"""
+
+        courses = []
+        courses.append(get_from_api("grades"))
+
+        # Set context
+        context = super().get_context_data(**kwargs)
+        context['courses'] = courses
+        return context
+
+
 class CourseHome(TemplateView):
     """Course home page class"""
     template_name = "coursehome.html"
@@ -47,13 +63,11 @@ class CourseHome(TemplateView):
         """Get context for course main page"""
 
         course_id = kwargs.get('course_id', -1)
-        course = get_from_api(f"courses/{course_id}")
-        content = get_from_api(f"content/{course_id}")
 
         # Set context
         context = super().get_context_data(**kwargs)
-        context['course'] = course
-        context['content'] = content
+        context['course'] = get_from_api(f"courses/{course_id}")
+        context['content'] = get_from_api(f"content/{course_id}")
         return context
 
 class CourseLectures(TemplateView):
@@ -62,12 +76,12 @@ class CourseLectures(TemplateView):
 
     def get_context_data(self, **kwargs):
         """Get context for course lectures page"""
+
         course_id = kwargs.get('course_id', -1)
-        course = get_from_api(f"courses/{course_id}")
 
         # Set context
         context = super().get_context_data(**kwargs)
-        context['course'] = course
+        context['course'] = get_from_api(f"courses/{course_id}")
         return context
 
 
@@ -77,12 +91,12 @@ class CourseAssignments(TemplateView):
 
     def get_context_data(self, **kwargs):
         """Get context for course assignments page"""
+
         course_id = kwargs.get('course_id', -1)
-        course = get_from_api(f"courses/{course_id}")
 
         # Set context
         context = super().get_context_data(**kwargs)
-        context['course'] = course
+        context['course'] = get_from_api(f"courses/{course_id}")
         return context
 
 
@@ -92,10 +106,10 @@ class CourseLabs(TemplateView):
 
     def get_context_data(self, **kwargs):
         """Get context for course labs page"""
+
         course_id = kwargs.get('course_id', -1)
-        course = get_from_api(f"courses/{course_id}")
 
         # Set context
         context = super().get_context_data(**kwargs)
-        context['course'] = course
+        context['course'] = get_from_api(f"courses/{course_id}")
         return context

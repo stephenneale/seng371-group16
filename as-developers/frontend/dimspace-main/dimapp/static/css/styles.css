@@ -6,7 +6,8 @@
 }
 
 .content-wrap {
-  padding-bottom: 4.5rem;    /* Footer height */
+  padding-bottom: 4.5rem;
+  min-height: 100vh;
 }
 
 .footer {

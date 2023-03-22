@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block nav_grades %}
+active
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <nav aria-label="breadcrumb" style="margin-top: 15px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/dimspace">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Grades</li>
+        </ol>
+    </nav>
+
+    <div class="text mt-3" style="margin-bottom: 2em;">
+        <h1>Grades</h1>
+    </div>
+
+    <div class="col courses border border-secondary rounded" style="display: flex; flex-direction: column; padding-bottom: 25px; float: none; overflow: hidden">
+        <h4 style="margin: 15px;">Spring 2023</h1>
+        <div class="d-flex flex-column">
+            {% for course in courses %}
+                <div class="p-2">
+                    <div class="card">
+                        <div class="card-body" style="width: 100%;">
+                            <h5 style="margin-bottom: 2em;">{{course.courseName}}</h6>
+                            {% with course.grades as grades %}
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Grade Item</th>
+                                    <th scope="col">Points</th>
+                                    <th scope="col">Grade</th>
+                                    <th scope="col">Comments & Assessments</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for grade in grades %}
+                                    <tr>
+                                        <td>{{grade.itemName}}</td>
+                                        <td>{{grade.markNumerator}}</td>
+                                        <td>- %</td>
+                                        <td></td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                            {% endwith %}
+                            <p class="card-text"><small class="text-muted">Updated X days ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
