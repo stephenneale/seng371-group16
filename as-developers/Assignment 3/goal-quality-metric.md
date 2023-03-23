@@ -1,0 +1,4 @@
+- Choose 4-5 REQ's and do a GQM (goal, question metric)
+- well described
+- well documented
+- Goal, Quality, Metric
