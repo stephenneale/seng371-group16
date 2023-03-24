@@ -49,6 +49,13 @@ class Grades(TemplateView):
         courses = []
         courses.append(get_from_api("grades"))
 
+        for course in courses:
+            for grade in course['grades']:
+                if grade['percentage']:
+                    grade['percentage'] = str(f"%{grade['percentage']*100}")
+
+        print(courses)
+
         # Set context
         context = super().get_context_data(**kwargs)
         context['courses'] = courses
