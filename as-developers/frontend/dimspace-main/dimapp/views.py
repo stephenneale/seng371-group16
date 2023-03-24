@@ -1,5 +1,7 @@
 """View classes for dimspace"""
 from django.views.generic import TemplateView
+from django.http import HttpResponseRedirect
+from django.views.decorators.csrf import csrf_exempt
 import requests
 
 
@@ -119,4 +121,28 @@ class CourseLabs(TemplateView):
         # Set context
         context = super().get_context_data(**kwargs)
         context['course'] = get_from_api(f"courses/{course_id}")
+        return context
+
+
+class ViewAnnouncement(TemplateView):
+    """Course announcement view class"""
+    template_name="viewannouncement.html"
+
+    def get_context_data(self, **kwargs):
+        """Get context for announcement view"""
+
+        course_id = kwargs.get('course_id', -1)
+        content_id = kwargs.get('content_id', -1)
+        content = get_from_api(f"content/{course_id}")
+        for item in content:
+            if item['id'] == content_id:
+                announcement = item
+
+        # Add content to recently viewed post endpoint
+        requests.post(API_LINK+f"content/{course_id}/{content_id}/view", timeout=5)
+
+        # Set context
+        context = super().get_context_data(**kwargs)
+        context['course'] = get_from_api(f"courses/{course_id}")
+        context['announcement'] = announcement
         return context
