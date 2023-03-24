@@ -38,6 +38,7 @@ class Home(TemplateView):
         context = super().get_context_data(**kwargs)
         context['courses'] = courses
         context['course_info'] = course_info
+        context['recent'] = get_from_api("content/recent")
         return context
 
 
@@ -55,8 +56,6 @@ class Grades(TemplateView):
             for grade in course['grades']:
                 if grade['percentage']:
                     grade['percentage'] = str(f"%{grade['percentage']*100}")
-
-        print(courses)
 
         # Set context
         context = super().get_context_data(**kwargs)

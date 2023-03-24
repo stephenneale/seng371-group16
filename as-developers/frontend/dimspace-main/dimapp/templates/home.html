@@ -15,16 +15,18 @@ active
         <div class="card-body">
             <h4 style="margin-bottom: 15px;">Frequently Viewed</h1>
             <div class="frequently-viewed">
-                <div class="col-sm-2" style="text-align: center; margin-bottom: 15px;">
+                {% for item in recent %}
+                <div class="col-sm-3" style="width: 19rem; text-align: center; margin-bottom: 15px;">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <p class="card-text">
-                                Course name<br>
-                                <a href="#" class="stretched-link">filename.pdf</a>
+                                EE 120/Announcement {{ item.id }}<br>
+                                <a href="/dimspace/course/{{ item.courseId }}/announcements/{{ item.id }}" class="stretched-link text-reset">{{ item.messagePreview }}</a>
                             </p>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
         </div>
     </div>
