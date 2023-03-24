@@ -2,11 +2,16 @@
  Create more unique features
 <br>
 Why do we need more unique Feautures?
-    - If we do not, it will be to similar to the current system, Brightspace.
+    - If we do not, it will be to similar to the current system, Brightspace. <br>
 Why do we not need something similar to Brightspace?
-    - Brighspace is already in place, and we are trying to create a better system.
+    - Brighspace is already in place and we are trying to create a better system. <br>
 Why do we need a better system?
-    - Brightspace is too "busy". There are to much features on the screen and we do not use very many of them
+    - Brightspace lacks some much desired improvements, such as the order of course content being displayed. <br>
+Why is our system not unique enough?
+    - Our system displays the similar content as BrightSpace and it lacks distinct functions.
+    
+![rc1](https://user-images.githubusercontent.com/43158508/227654665-0babeb2c-022f-4900-8b1f-a9848959f7b8.png)
+
 
 # Requested change #2
 Add a window of time in which notifications will be sent
