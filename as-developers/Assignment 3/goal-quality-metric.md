@@ -22,7 +22,7 @@
 - Check back-up records for most recent back up
 - Run upload tests
 
-# Requirment 2
+# Requirment 2 Student Capacity
 
 | Topic        | Response                                                     |
 |--------------|--------------------------------------------------------------|
@@ -42,10 +42,31 @@
 ## Metrics
 - Uvics enrollment data
 - Look at current server for average students on Brightspace at any given time
-- Run load tests
+- Run Load tests
 - Run Performance tests
+- Run stress tests for 160+ hours a week
 
-# Requirment 3
+# Requirment 3 Security Measures
+
+| Topic        | Response                                                     |
+|--------------|--------------------------------------------------------------|
+| Object:      | Security                                                     |
+| Purpose:     | Users data is safely stored and secure                       |
+| Focus:       | Security                                                     |
+| Viewpoint:   | Users.                                                       |
+| Environment: | DimSpace                                                     |
+
+## Question
+- Does Uvic ever have intrusion attempts? If so how many?
+- Do we have vulnerabilites?
+- Can we elimiate this vulnerbalities?
+- What is Uvics response time to a security breach?
+
+## Metrics
+- Identify how many intrustions Uvic currently reciveves?
+- Idenitfy the number of vulnerbilites and how many of them we can eliminate
+- Run security system tests
+- Run a data breach tests and collect Uvics reponse time
 
 # Requirment 4
 
