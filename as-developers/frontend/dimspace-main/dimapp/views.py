@@ -1,9 +1,23 @@
 """View classes for dimspace"""
 from django.views.generic import TemplateView
+from django.http import HttpResponseRedirect
+from django.views.decorators.csrf import csrf_exempt
 import requests
 
+
 # Change this link to your own deployment of the Spring backend
-API_LINK = "https://stephenneale-super-goggles-5x4p9g77wq4f4vj7-8080.preview.app.github.dev/"
+# For development and CI, the springboot backend is being hosted at the URL below
+API_LINK = "http://159.223.198.2:8080/"
+
+
+def get_from_api(endpoint: str):
+    """Attempts to get json from the specified API endpoint"""
+    try:
+        result = requests.get(API_LINK + endpoint, timeout=5).json()
+    except ValueError:
+        print(f"Error trying to reach {API_LINK}{endpoint}")
+        result = []
+    return result
 
 
 class Home(TemplateView):
@@ -11,24 +25,41 @@ class Home(TemplateView):
     template_name = "home.html"
 
     def get_context_data(self, **kwargs):
+        """Get context for home page"""
 
-        try:
-            courses = requests.get(API_LINK + "courses", timeout=5).json()
-        except ValueError:
-            print(f"Error trying to reach {API_LINK}courses")
-            courses = []
-
+        courses = get_from_api("courses")
         course_info = []
-        for course in courses:
-            try:
-                info = requests.get(API_LINK + f"courses/{course['id']}").json()
-                course_info.append(info)
-            except ValueError:
-                print(f"Error tyring to reach {API_LINK}courses/{course['id']}")
 
+        for course in courses:
+            info = get_from_api(f"courses/{course['id']}")
+            course_info.append(info)
+
+        # Set context
         context = super().get_context_data(**kwargs)
         context['courses'] = courses
         context['course_info'] = course_info
+        context['recent'] = get_from_api("content/recent")
+        return context
+
+
+class Grades(TemplateView):
+    """Grades page class"""
+    template_name = "grades.html"
+
+    def get_context_data(self, **kwargs):
+        """Get context for grades page"""
+
+        courses = []
+        courses.append(get_from_api("grades"))
+
+        for course in courses:
+            for grade in course['grades']:
+                if grade['percentage']:
+                    grade['percentage'] = str(f"%{grade['percentage']*100}")
+
+        # Set context
+        context = super().get_context_data(**kwargs)
+        context['courses'] = courses
         return context
 
 
@@ -37,20 +68,80 @@ class CourseHome(TemplateView):
     template_name = "coursehome.html"
 
     def get_context_data(self, **kwargs):
+        """Get context for course main page"""
 
         course_id = kwargs.get('course_id', -1)
-        try:
-            course = requests.get(API_LINK + f"courses/{course_id}", timeout=5).json()
-        except ValueError:
-            print(f"Error trying to reach {API_LINK}courses/{course_id}")
-            course = []
-        try:
-            content = requests.get(API_LINK + f"content/{course_id}", timeout=5).json()
-        except ValueError:
-            print(f"Error trying to reach {API_LINK}content/{course_id}")
-            content = []
 
+        # Set context
         context = super().get_context_data(**kwargs)
-        context['course'] = course
-        context['content'] = content
+        context['course'] = get_from_api(f"courses/{course_id}")
+        context['content'] = get_from_api(f"content/{course_id}")
+        return context
+
+class CourseLectures(TemplateView):
+    """Course lectures page class"""
+    template_name="courselectures.html"
+
+    def get_context_data(self, **kwargs):
+        """Get context for course lectures page"""
+
+        course_id = kwargs.get('course_id', -1)
+
+        # Set context
+        context = super().get_context_data(**kwargs)
+        context['course'] = get_from_api(f"courses/{course_id}")
+        return context
+
+
+class CourseAssignments(TemplateView):
+    """Course assignments page class"""
+    template_name="courseassignments.html"
+
+    def get_context_data(self, **kwargs):
+        """Get context for course assignments page"""
+
+        course_id = kwargs.get('course_id', -1)
+
+        # Set context
+        context = super().get_context_data(**kwargs)
+        context['course'] = get_from_api(f"courses/{course_id}")
+        return context
+
+
+class CourseLabs(TemplateView):
+    """Course labs page class"""
+    template_name="courselabs.html"
+
+    def get_context_data(self, **kwargs):
+        """Get context for course labs page"""
+
+        course_id = kwargs.get('course_id', -1)
+
+        # Set context
+        context = super().get_context_data(**kwargs)
+        context['course'] = get_from_api(f"courses/{course_id}")
+        return context
+
+
+class ViewAnnouncement(TemplateView):
+    """Course announcement view class"""
+    template_name="viewannouncement.html"
+
+    def get_context_data(self, **kwargs):
+        """Get context for announcement view"""
+
+        course_id = kwargs.get('course_id', -1)
+        content_id = kwargs.get('content_id', -1)
+        content = get_from_api(f"content/{course_id}")
+        for item in content:
+            if item['id'] == content_id:
+                announcement = item
+
+        # Add content to recently viewed post endpoint
+        requests.post(API_LINK+f"content/{course_id}/{content_id}/view", timeout=5)
+
+        # Set context
+        context = super().get_context_data(**kwargs)
+        context['course'] = get_from_api(f"courses/{course_id}")
+        context['announcement'] = announcement
         return context

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <nav aria-label="breadcrumb" style="margin-top: 15px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/dimspace">Home</a></li>
+        <li class="breadcrumb-item"><a href="/dimspace/course/{{ course.id }}">{{ course.code }}</a></li>
+        <li class="breadcrumb-item"><a href="/dimspace/course/{{ course.id }}">Announcements</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Announcement {{ announcement.id }}</li>
+        </ol>
+    </nav>
+
+    <div class="text mt-3" style="margin-bottom: 2em;">
+        <h1>{{ course.code }}</h1>
+    </div>
+
+    <div class="col-3 course-content border border-secondary rounded" style="float:left; padding-bottom: 25px; display: flex; flex-direction: column; overflow-y: auto; margin-right: 20px">
+        <h4 style="margin: 15px;">Content</h1>
+        <ul>
+            <li><a href="../" class="link-secondary">Announcements</a></li>
+            <li><a href="../lectures">Lectures</a></li>
+            <li><a href="../assignments">Assignments</a></li>
+            <li><a href="../labs">Labs</a></li>
+        </ul> 
+    </div>
+
+    <div class="col courses border border-secondary rounded" style="display: flex; flex-direction: column; padding-bottom: 25px; float: none; overflow: hidden">
+        <h4 style="margin: 15px;">Announcement {{ announcement.id }}</h4>
+        <div class="d-flex flex-column border border-secondary rounded" style="margin: 15px; padding: 15px">
+            <h5>{{ announcement.author }}</h5>
+            <p>{{ announcement.message }}</p>
+            Posted X mins ago.
+        </div>
+    </div>
+</div>
+{% endblock %}

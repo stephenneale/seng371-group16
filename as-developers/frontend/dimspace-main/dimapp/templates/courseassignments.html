@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <nav aria-label="breadcrumb" style="margin-top: 15px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/dimspace">Home</a></li>
+        <li class="breadcrumb-item"><a href="/dimspace/course/{{ course.id }}/">{{ course.code }}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+        </ol>
+    </nav>
+
+    <div class="text mt-3" style="margin-bottom: 2em;">
+        <h1>{{ course.code }}</h1>
+    </div>
+
+    <div class="col-3 course-content border border-secondary rounded" style="float:left; padding-bottom: 25px; display: flex; flex-direction: column; overflow-y: auto; overflow-x: auto; margin-right: 20px">
+        <h4 style="margin: 15px;">Content</h1>
+        <ul style="padding-right: 15px;">
+            <li><a href="../">Announcements</a></li>
+            <li><a href="../lectures">Lectures</a></li>
+            <li><a href="#" class="link-secondary">Assignments</a></li>
+            <ul>
+                <li><a href="#">Assignment 5</a></li>
+                <li><a href="#">Assignment 4</a></li>
+                <li><a href="#">Assignment 3</a></li>
+                <li><a href="#">Assignment 2</a></li>
+                <li><a href="#">Assignment 1</a></li>
+            </ul>
+            <li><a href="../labs">Labs</a></li>
+        </ul> 
+    </div>
+
+    <div class="col courses border border-secondary rounded" style="display: flex; flex-direction: column; padding-bottom: 25px; float: none; overflow: hidden">
+        <h4 style="margin: 15px;">Assignments</h1>
+        <div class="d-flex flex-column">
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body" style="width: 100%;">
+                        <h6 class="card-title" style="margin-bottom: 2em;">Assignment 5</h6>
+                        <p>Due March 22nd, 11:59pm</p>
+                        <a href="#" class="btn btn-primary stretched-link" style="float: right">View PDF</a>
+                        <p class="card-text"><small class="text-muted">Posted X days ago </small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body" style="width: 100%;">
+                        <h6 class="card-title" style="margin-bottom: 2em;">Assignment 4</h6>
+                        <p>Due March 8th, 11:59pm</p>
+                        <a href="#" class="btn btn-primary stretched-link" style="float: right">View PDF</a>
+                        <p class="card-text"><small class="text-muted">Posted X days ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body" style="width: 100%;">
+                        <h6 class="card-title" style="margin-bottom: 2em;">Assignment 3</h6>
+                        <p>Due February 22nd, 11:59pm</p>
+                        <a href="#" class="btn btn-primary stretched-link" style="float: right">View PDF</a>
+                        <p class="card-text"><small class="text-muted">Posted X days ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body" style="width: 100%;">
+                        <h6 class="card-title" style="margin-bottom: 2em;">Assignment 2</h6>
+                        <p>Due February 8th, 11:59pm</p>
+                        <a href="#" class="btn btn-primary stretched-link" style="float: right">View PDF</a>
+                        <p class="card-text"><small class="text-muted">Posted X days ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body" style="width: 100%;">
+                        <h6 class="card-title" style="margin-bottom: 2em;">Assignment 1</h6>
+                        <p>Due January 25th, 11:59pm</p>
+                        <a href="#" class="btn btn-primary stretched-link" style="float: right">View PDF</a>
+                        <p class="card-text"><small class="text-muted">Posted X days ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
