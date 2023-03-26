@@ -46,7 +46,7 @@
 - Run Performance tests
 - Run stress tests for 160+ hours a week
 
-# Requirment 3 Security Measures
+# Requirment 3 Security
 
 | Topic        | Response                                                     |
 |--------------|--------------------------------------------------------------|
@@ -68,7 +68,28 @@
 - Run security system tests
 - Run a data breach tests and collect Uvics reponse time
 
-# Requirment 4
+# Requirment 4 Notifications
+
+| Topic        | Response                                                     |
+|--------------|--------------------------------------------------------------|
+| Object:      | Notification System                                          |
+| Purpose:     | Determine how useful the system is                           |
+| Focus:       | Notififcations                                               |
+| Viewpoint:   | Students                                                     |
+| Environment: | DimSpace                                                     |
+
+## Question
+- Does our system send enough notifications?
+- Do students get notified for due dates at proper times?
+- How many notifcations do students recieve?
+- What is the quality of our notifcation systems?
+
+## Metrics
+- Run tests to estimate how many notifications a student will get per day/week
+- Implement optional feature that asks student if the notification was to early, on time or too late. Simple 1 click button.
+- Run a tests of Mock students and determine how many notifications each Mock student recieved
+- Run a student survey each semester that gives a quantatative response on the quality of the notification system
+
 
 # Requirment 5
 
