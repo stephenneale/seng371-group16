@@ -10,7 +10,7 @@ Why do we need a better system?<br>
 - Brightspace lacks some much desired improvements, such as the order of course content being displayed. <br>
 
 Why is our system not unique enough?<br>
-- Our system displays the similar content as BrightSpace and it lacks distinct functions.
+- Our system displays the similar content as BrightSpace but it also has improvements over BrightSpace and unique features such as self-adaptation. It is likely that the client requested more distinct features and wanted the system to be less identical to BrightSpace. 
 
     
 ![rc1](https://user-images.githubusercontent.com/43158508/227654665-0babeb2c-022f-4900-8b1f-a9848959f7b8.png)
