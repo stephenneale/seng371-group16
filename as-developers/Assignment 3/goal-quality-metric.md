@@ -96,7 +96,7 @@
 | Topic        | Response                                                     |
 |--------------|--------------------------------------------------------------|
 | Object:      | Grades                                                       |
-| Purpose:     | Ussrs can see grades                                         |
+| Purpose:     | Users can see grades                                         |
 | Focus:       | GPA of students                                              |
 | Viewpoint:   | Users                                                        |
 | Environment: | DimSpace                                                     |
