@@ -53,7 +53,7 @@
 | Object:      | Security                                                     |
 | Purpose:     | Users data is safely stored and secure                       |
 | Focus:       | Security                                                     |
-| Viewpoint:   | Users.                                                       |
+| Viewpoint:   | Users                                                        |
 | Environment: | DimSpace                                                     |
 
 ## Question
@@ -92,6 +92,25 @@
 
 
 # Requirment 5
+
+| Topic        | Response                                                     |
+|--------------|--------------------------------------------------------------|
+| Object:      | Grades                                                       |
+| Purpose:     | Ussrs can see grades                                         |
+| Focus:       | GPA of students                                              |
+| Viewpoint:   | Users                                                        |
+| Environment: | DimSpace                                                     |
+
+## Question
+- Can professors post all grades on assesments and are viewvble by students?
+- Are these grades backed-up somewhere?
+- Can professors post grades higher then 100%?
+
+## Metrics
+- Create unit tests for grades
+- Back-up all grades automatically after an instructor posts one
+- Create tests for grades higher then %100
+- Create tests for automatically calculating overall GPA to ensure no errors are made
 
 # Requirment 6
 
