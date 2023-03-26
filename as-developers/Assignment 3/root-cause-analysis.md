@@ -27,8 +27,8 @@ Why can't we ensure the notification to be sent before the due time? <br>
 Why is the self adaptation function interrupting with the notification sending feature?
 - There lacks a mechanisim that will make sure certain notifications to be sent regardless of the self adaptation algorithm
 
-Why is the time window machnisim not presented in the system?
-- The actual algorithm that control the time of notifications being sent was not designed and therefore this mechnism was not included in the designing documents. 
+Why is the time window mechanisim not presented in the system?
+- The actual algorithm that control the time of notifications being sent was not designed at the time and therefore this mechanism was not included in the designing documents. 
 ![rc2](https://user-images.githubusercontent.com/43158508/227662315-93e60b63-f5e7-4a2a-8581-48935f9e74a9.png)
 
 
