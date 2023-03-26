@@ -28,8 +28,13 @@ Why is the self adaptation function interrupting with the notification sending f
 - There lacks a mechanisim that will make sure certain notifications to be sent regardless of the self adaptation algorithm
 
 Why is the time window mechanisim not presented in the system?
-- The actual algorithm that control the time of notifications being sent was not designed at the time and therefore this mechanism was not included in the designing documents. 
-![rc2](https://user-images.githubusercontent.com/43158508/227662315-93e60b63-f5e7-4a2a-8581-48935f9e74a9.png)
+- The actual algorithm that control the time of notifications being sent was not designed at the time and therefore this mechanism was not included in the designing documents.
+
+Why is the mechanism missing in the designing documents?
+- The time window mechanism is planned as part of the self-adaptation algorithm but is not documented properly. 
+
+![rc2](https://user-images.githubusercontent.com/43158508/227809936-64e47703-fcce-4414-b363-115c565595fa.png)
+
 
 
 # Requested change #3
