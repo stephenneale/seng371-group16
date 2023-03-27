@@ -28,7 +28,7 @@ ways to ensure our requirements are met at a high standard and how we would coll
 process. The final stage metrics, had us quantify our goals and questions so the development team has data that they
 need to analyse and ensure a continuous process of pushing out high quality software.
 
-[Please follow this link to view our GQM.](as-developers/Assignment\ 3/goal-quality-metric.md)
+[Please follow this link to view our GQM.](as-developers/Assignment%203/goal-quality-metric.md)
 
 ## Implement the Application 100%
 
