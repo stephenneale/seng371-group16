@@ -47,3 +47,7 @@ was that this would adapt to the user's behaviour using Frecency (the combinatio
 not feasible to implement this in time. Instead, Recently Viewed shows pages that the user has been to most recently
 only (with frequency playing no part). Despite this, the Recently Viewed module is fully functional, and browsing pages
 on the app will cause it to update.
+
+Finally, given that login/authentication would require cooperation from UVic University Systems, we created a mockup of
+the login flow for a user logging into the webapp. This flow is presented in slides as a PDF file, [which can be viewed
+here.](as-developers/Assignment%203/DimSpaceMfaMockUp.pdf)
