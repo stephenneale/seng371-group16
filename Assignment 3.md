@@ -1,8 +1,23 @@
 Assignment 3
 ============
 
+<!-- TOC -->
+* [Root Cause Analysis](#root-cause-analysis)
+* [GQM](#gqm)
+* [Implement the Application 100%](#implement-the-application-100)
+<!-- TOC -->
 
 ## Root Cause Analysis
+
+We performed a Root Cause Analysis on the changes requested by the client team. For each requested change, a fishbone
+diagram was also drawn to identify as many causes as possible. The client team mainly requested more features to be
+included in our implementation, but the Root Cause Analysis allowed us to identify the actual reasons behind these
+requests for more features. There are various causes of a lacking feature, such as the limit on resources. However, the
+client team may also request for a feature that is actually planned in the design, but not documented in the design
+files by the developer team. To sum up, the Root Cause Analysis allows us to identify the issues hidden in our design
+and improve our implementation in a practical direction.
+
+[Please follow this link to view our Root Cause Analysis.](as-developers/Assignment%203/root-cause-analysis.md)
 
 ## GQM
 
