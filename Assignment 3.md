@@ -4,7 +4,7 @@ Assignment 3
 <!-- TOC -->
 * [Root Cause Analysis](#root-cause-analysis)
 * [GQM](#gqm)
-* [Implement the Application 100%](#implement-the-application-100)
+* [Implement the Application](#implement-the-application)
 <!-- TOC -->
 
 ## Root Cause Analysis
@@ -30,7 +30,7 @@ need to analyse and ensure a continuous process of pushing out high quality soft
 
 [Please follow this link to view our GQM.](as-developers/Assignment%203/goal-quality-metric.md)
 
-## Implement the Application 100%
+## Implement the Application
 
 For our implementation of the application, we decided to focus on a few core areas:
 
