@@ -21,6 +21,7 @@ class GradeController {
 					22.5,
 					25.0,
 					22.5/25.0,
+					0.05,
 					null,
 				),
 				GradeDto(
@@ -28,6 +29,7 @@ class GradeController {
 					24.0,
 					25.0,
 					24.0/25.0,
+					0.05,
 					"Excellent work!",
 				),
 				GradeDto(
@@ -35,6 +37,7 @@ class GradeController {
 					null,
 					25.0,
 					null,
+					0.05,
 					null,
 				),
 				GradeDto(
@@ -42,6 +45,7 @@ class GradeController {
 					null,
 					25.0,
 					null,
+					0.05,
 					null,
 				),
 				GradeDto(
@@ -49,6 +53,7 @@ class GradeController {
 					48.5,
 					50.0,
 					48.5/50.0,
+					0.4,
 					"Amazing!",
 				),
 				GradeDto(
@@ -56,6 +61,7 @@ class GradeController {
 					5.0,
 					5.0,
 					1.0,
+					0.01,
 					null,
 				),
 				GradeDto(
@@ -63,6 +69,7 @@ class GradeController {
 					null,
 					5.0,
 					null,
+					0.01,
 					null,
 				),
 			)

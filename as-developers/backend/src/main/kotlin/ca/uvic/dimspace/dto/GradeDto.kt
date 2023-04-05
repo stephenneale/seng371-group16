@@ -5,5 +5,6 @@ data class GradeDto(
 	val markNumerator: Double?,
 	val markDenominator: Double,
 	val percentage: Double?,
+	val weight: Double?,
 	val comment: String?,
 )
