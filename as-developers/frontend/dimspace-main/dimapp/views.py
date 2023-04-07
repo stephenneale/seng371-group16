@@ -54,14 +54,23 @@ class Grades(TemplateView):
         courses = []
         courses.append(get_from_api("grades"))
 
+        all_cumulative_grades = []
         for course in courses:
+            cumulative_grade = 0
             for grade in course['grades']:
                 if grade['percentage']:
+                    # Add weighted grade to cumulative_grade
+                    cumulative_grade += (grade['percentage'] * grade['weight'])
+                    # Convert decimal grade to percentage string for displaying
                     grade['percentage'] = str(f"%{grade['percentage']*100}")
+            # Convert decimal cumulative grade to percentage string
+            cumulative_grade = str(f"%{cumulative_grade*100}")
+            all_cumulative_grades.append(cumulative_grade)
 
         # Set context
         context = super().get_context_data(**kwargs)
         context['courses'] = courses
+        context['all_cumulative_grades'] = all_cumulative_grades
         return context
 
 

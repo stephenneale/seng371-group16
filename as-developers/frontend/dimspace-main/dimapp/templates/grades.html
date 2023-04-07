@@ -4,6 +4,7 @@
 active
 {% endblock %}
 
+{% load dimspace_extras %}
 {% block content %}
 <div class="container">
     <nav aria-label="breadcrumb" style="margin-top: 15px;">
@@ -32,22 +33,25 @@ active
                                     <th scope="col">Grade Item</th>
                                     <th scope="col">Points</th>
                                     <th scope="col">Grade</th>
+                                    <th scope="col">Weight</th>
                                     <th scope="col">Comments & Assessments</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 {% for grade in grades %}
                                     <tr>
-                                        <td>{{grade.itemName}}</td>
-                                        <td>{{grade.markNumerator|default_if_none:"-"}} / {{grade.markDenominator|default_if_none:""}}</td>
-                                        <td>{{grade.percentage|default_if_none:"-"}}</td>
-                                        <td>{{grade.comment|default_if_none:""}}</td>
+                                        <td>{{ grade.itemName }}</td>
+                                        <td>{{ grade.markNumerator|default_if_none:"-" }} / {{ grade.markDenominator|default_if_none:"" }}</td>
+                                        <td>{{ grade.percentage|default_if_none:"-" }}</td>
+                                        <td>{{ grade.weight }}</td>
+                                        <td>{{ grade.comment|default_if_none:"" }}</td>
                                     </tr>
                                 {% endfor %}
                                 </tbody>
                             </table>
                             {% endwith %}
                             <p class="card-text"><small class="text-muted">Updated X days ago</small></p>
+                            <h5 class="text" style="float: right">Total achieved grade: <b>{{ all_cumulative_grades|index:forloop.counter0 }}</b></h5>
                         </div>
                     </div>
                 </div>
