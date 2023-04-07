@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
+<div class="container {% if darkmode %}text-light{% endif %}">
     <nav aria-label="breadcrumb" style="margin-top: 15px;">
         <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/dimspace">Home</a></li>
@@ -35,7 +35,7 @@
         <h4 style="margin: 15px;">Assignments</h1>
         <div class="d-flex flex-column">
             <div class="p-2">
-                <div class="card">
+                <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                     <div class="card-body" style="width: 100%;">
                         <h6 class="card-title" style="margin-bottom: 2em;">Assignment 5</h6>
                         <p>Due March 22nd, 11:59pm</p>
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="p-2">
-                <div class="card">
+                <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                     <div class="card-body" style="width: 100%;">
                         <h6 class="card-title" style="margin-bottom: 2em;">Assignment 4</h6>
                         <p>Due March 8th, 11:59pm</p>
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="p-2">
-                <div class="card">
+                <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                     <div class="card-body" style="width: 100%;">
                         <h6 class="card-title" style="margin-bottom: 2em;">Assignment 3</h6>
                         <p>Due February 22nd, 11:59pm</p>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="p-2">
-                <div class="card">
+                <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                     <div class="card-body" style="width: 100%;">
                         <h6 class="card-title" style="margin-bottom: 2em;">Assignment 2</h6>
                         <p>Due February 8th, 11:59pm</p>
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="p-2">
-                <div class="card">
+                <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                     <div class="card-body" style="width: 100%;">
                         <h6 class="card-title" style="margin-bottom: 2em;">Assignment 1</h6>
                         <p>Due January 25th, 11:59pm</p>
