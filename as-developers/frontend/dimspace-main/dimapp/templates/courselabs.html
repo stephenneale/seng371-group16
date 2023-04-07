@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
+<div class="container {% if darkmode %}text-light{% endif %}">
     <nav aria-label="breadcrumb" style="margin-top: 15px;">
         <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/dimspace">Home</a></li>
@@ -35,7 +35,7 @@
         <h4 style="margin: 15px;">Labs</h1>
         <div class="d-flex flex-column">
             <div class="p-2">
-                <div class="card">
+                <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                     <div class="card-body" style="width: 100%;">
                         <h6 class="card-title" style="margin-bottom: 2em;">Experiment 4</h6>
                         <p>Report due March 28th, 11:59pm</p>
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="p-2">
-                <div class="card">
+                <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                     <div class="card-body" style="width: 100%;">
                         <h6 class="card-title" style="margin-bottom: 2em;">Experiment 3</h6>
                         <p>Report due March 14th, 11:59pm</p>
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="p-2">
-                <div class="card">
+                <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                     <div class="card-body" style="width: 100%;">
                         <h6 class="card-title" style="margin-bottom: 2em;">Experiment 2</h6>
                         <p>Report due February 28th, 11:59pm</p>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="p-2">
-                <div class="card">
+                <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                     <div class="card-body" style="width: 100%;">
                         <h6 class="card-title" style="margin-bottom: 2em;">Experiment 1</h6>
                         <p>Report due February 14th, 11:59pm</p>
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="p-2">
-                <div class="card">
+                <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                     <div class="card-body" style="width: 100%;">
                         <h6 class="card-title" style="margin-bottom: 2em;">Lab Manual</h6>
                         <p>Laboratory Manual: EE 120 - Spring 2023</p>

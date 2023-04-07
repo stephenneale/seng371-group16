@@ -72,6 +72,7 @@ class Grades(TemplateView):
         context = super().get_context_data(**kwargs)
         context['courses'] = courses
         context['all_cumulative_grades'] = all_cumulative_grades
+        context['darkmode'] = get_from_api("darkmode")['enabled']
         return context
 
 
@@ -94,6 +95,7 @@ class CourseHome(TemplateView):
         context = super().get_context_data(**kwargs)
         context['course'] = get_from_api(f"courses/{course_id}")
         context['content'] = content
+        context['darkmode'] = get_from_api("darkmode")['enabled']
         return context
 
 class CourseLectures(TemplateView):
@@ -108,6 +110,7 @@ class CourseLectures(TemplateView):
         # Set context
         context = super().get_context_data(**kwargs)
         context['course'] = get_from_api(f"courses/{course_id}")
+        context['darkmode'] = get_from_api("darkmode")['enabled']
         return context
 
 
@@ -123,6 +126,7 @@ class CourseAssignments(TemplateView):
         # Set context
         context = super().get_context_data(**kwargs)
         context['course'] = get_from_api(f"courses/{course_id}")
+        context['darkmode'] = get_from_api("darkmode")['enabled']
         return context
 
 
@@ -138,6 +142,7 @@ class CourseLabs(TemplateView):
         # Set context
         context = super().get_context_data(**kwargs)
         context['course'] = get_from_api(f"courses/{course_id}")
+        context['darkmode'] = get_from_api("darkmode")['enabled']
         return context
 
 
@@ -162,6 +167,7 @@ class ViewAnnouncement(TemplateView):
         context = super().get_context_data(**kwargs)
         context['course'] = get_from_api(f"courses/{course_id}")
         context['announcement'] = announcement
+        context['darkmode'] = get_from_api("darkmode")['enabled']
         return context
 
 
@@ -179,10 +185,26 @@ class AddCourse(TemplateView):
 
         return redirect('/dimspace/addcourse/success')
 
+    def get_context_data(self, **kwargs):
+        """Get context for course labs page"""
+
+        # Set context
+        context = super().get_context_data(**kwargs)
+        context['darkmode'] = get_from_api("darkmode")['enabled']
+        return context
+
 
 class AddCourseSuccess(TemplateView):
     """Success message for add course"""
     template_name="addcourse_success.html"
+
+    def get_context_data(self, **kwargs):
+        """Get context for course labs page"""
+
+        # Set context
+        context = super().get_context_data(**kwargs)
+        context['darkmode'] = get_from_api("darkmode")['enabled']
+        return context
 
 
 @method_decorator(csrf_exempt, name='dispatch')
@@ -213,3 +235,11 @@ class ToggleDarkMode(TemplateView):
                 )
 
         return redirect('/dimspace')
+    
+    def get_context_data(self, **kwargs):
+        """Get context for course labs page"""
+
+        # Set context
+        context = super().get_context_data(**kwargs)
+        context['darkmode'] = get_from_api("darkmode")['enabled']
+        return context

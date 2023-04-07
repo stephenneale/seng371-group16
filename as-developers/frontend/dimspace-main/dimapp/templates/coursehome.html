@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
+<div class="container {% if darkmode %}text-light{% endif %}">
     <nav aria-label="breadcrumb" style="margin-top: 15px;">
         <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/dimspace">Home</a></li>
@@ -28,7 +28,7 @@
         <div class="d-flex flex-column">
             {% for content in content %}
                 <div class="p-2">
-                    <div class="card">
+                    <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                         <div class="card-body" style="width: 100%;">
                             <h6 class="card-title" style="margin-bottom: 2em;">{{ content.author }}</h6>
                             <p>{{content.message}}</p>

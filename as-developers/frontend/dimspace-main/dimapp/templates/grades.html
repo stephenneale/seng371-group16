@@ -6,7 +6,7 @@ active
 
 {% load dimspace_extras %}
 {% block content %}
-<div class="container">
+<div class="container {% if darkmode %}text-light{% endif %}">
     <nav aria-label="breadcrumb" style="margin-top: 15px;">
         <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/dimspace">Home</a></li>
@@ -23,11 +23,11 @@ active
         <div class="d-flex flex-column">
             {% for course in courses %}
                 <div class="p-2">
-                    <div class="card">
+                    <div class="card {% if darkmode %}bg-dark border border-secondary{% endif %}">
                         <div class="card-body" style="width: 100%;">
                             <h5 style="margin-bottom: 2em;">{{course.courseName}}</h6>
                             {% with course.grades as grades %}
-                            <table class="table">
+                            <table class="table {% if darkmode %}text-light{% endif %}">
                                 <thead>
                                 <tr>
                                     <th scope="col">Grade Item</th>
