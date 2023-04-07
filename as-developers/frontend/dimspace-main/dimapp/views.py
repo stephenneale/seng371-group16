@@ -1,7 +1,9 @@
 """View classes for dimspace"""
+import json
 from django.views.generic import TemplateView
-from django.http import HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
+from django.shortcuts import redirect
 import requests
 
 
@@ -71,11 +73,17 @@ class CourseHome(TemplateView):
         """Get context for course main page"""
 
         course_id = kwargs.get('course_id', -1)
+        content = get_from_api(f"content/{course_id}")
+        if content == []:
+            content = [{
+                "author":"DimSpace",
+                "message":"Nothing found here, check back later!",
+            }]
 
         # Set context
         context = super().get_context_data(**kwargs)
         context['course'] = get_from_api(f"courses/{course_id}")
-        context['content'] = get_from_api(f"content/{course_id}")
+        context['content'] = content
         return context
 
 class CourseLectures(TemplateView):
@@ -145,3 +153,23 @@ class ViewAnnouncement(TemplateView):
         context['course'] = get_from_api(f"courses/{course_id}")
         context['announcement'] = announcement
         return context
+
+
+@method_decorator(csrf_exempt, name='dispatch')
+class AddCourse(TemplateView):
+    """Add new course class"""
+    template_name="addcourse.html"
+
+    def post(self, request):
+        """Posts new course to API"""
+        payload = request.POST.dict()
+        headers = {'content-type': 'application/json'}
+
+        requests.post(API_LINK+'courses', data=json.dumps(payload), headers=headers, timeout=10)
+
+        return redirect('/dimspace/addcourse/success')
+
+
+class AddCourseSuccess(TemplateView):
+    """Success message for add course"""
+    template_name="addcourse_success.html"
