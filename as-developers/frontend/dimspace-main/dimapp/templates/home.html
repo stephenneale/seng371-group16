@@ -43,9 +43,9 @@ active
 
     <div class="col courses border border-secondary rounded" style="display: flex; flex-direction: column; padding-bottom: 25px; float: none; overflow: hidden">
         <h4 style="margin: 15px;">Courses</h1>
-        <div class="d-flex flex-row justify-content-around">
+        <div class="d-flex flex-row flex-wrap justify-content-around">
             {% for course in courses %}
-                <div class="card" style="width: 18rem;">
+                <div class="card mb-3" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title" style="margin-bottom: 1em;">{{ course.code }}</h5>
                         {% with course_info|index:forloop.counter0 as info %}
@@ -57,5 +57,6 @@ active
             {% endfor %}
         </div>
     </div>
+    <a class="btn btn-primary mt-3" href="./addcourse/" style="float: right">Add Course</a>
 </div>
 {% endblock %}

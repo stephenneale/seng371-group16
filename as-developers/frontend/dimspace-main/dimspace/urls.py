@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from dimapp.views import Home, CourseHome, CourseLectures, CourseAssignments, CourseLabs, Grades, ViewAnnouncement
+from dimapp.views import Home, CourseHome, CourseLectures, CourseAssignments, CourseLabs, Grades, ViewAnnouncement, AddCourse, AddCourseSuccess
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +26,6 @@ urlpatterns = [
     path('dimspace/course/<int:course_id>/labs/', CourseLabs.as_view()),
     path('dimspace/course/<int:course_id>/announcements/<int:content_id>', ViewAnnouncement.as_view()),
     path('dimspace/grades/', Grades.as_view()),
+    path('dimspace/addcourse/', AddCourse.as_view()),
+    path('dimspace/addcourse/success', AddCourseSuccess.as_view())
 ]
