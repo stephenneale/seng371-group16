@@ -41,6 +41,7 @@ class Home(TemplateView):
         context['courses'] = courses
         context['course_info'] = course_info
         context['recent'] = get_from_api("content/recent")
+        context['darkmode'] = get_from_api("darkmode")['enabled']
         return context
 
 
@@ -182,3 +183,33 @@ class AddCourse(TemplateView):
 class AddCourseSuccess(TemplateView):
     """Success message for add course"""
     template_name="addcourse_success.html"
+
+
+@method_decorator(csrf_exempt, name='dispatch')
+class ToggleDarkMode(TemplateView):
+    """Posts to API to toggle dark mode endpoint"""
+    template_name="toggledarkmode.html"
+
+    def get(self, request):
+        """Posts to API dark mode endpoint"""
+
+        response = requests.get(API_LINK+'darkmode', timeout=10).json()
+        headers = {'content-type': 'application/json'}
+
+        if response['enabled']:
+            requests.post(
+                API_LINK+'darkmode',
+                data=json.dumps({"enabled": 0}),
+                headers=headers,
+                timeout=10
+                )
+
+        elif not response['enabled']:
+            requests.post(
+                API_LINK+'darkmode',
+                data=json.dumps({"enabled": 1}),
+                headers=headers,
+                timeout=10
+                )
+
+        return redirect('/dimspace')
