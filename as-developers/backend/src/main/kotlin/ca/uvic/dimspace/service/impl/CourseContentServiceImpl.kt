@@ -44,6 +44,11 @@ class CourseContentServiceImpl : CourseContentService {
 	var recentItems = ArrayList<RecentItemIndex>()
 
 	override fun viewContent(courseId: Int, contentId: Int) {
+
+		if (courseId != 1) {
+			return
+		}
+
 		val index = recentItems.indexOfFirst { it.courseId == courseId && it.contentId == contentId }
 
 		if (index == -1) {
@@ -60,6 +65,10 @@ class CourseContentServiceImpl : CourseContentService {
 	}
 
 	override fun getContentForCourse(id: Int): List<CourseContent> {
+		if (id != 1) {
+			return emptyList()
+		}
+
 		return sampleCourseContent
 	}
 

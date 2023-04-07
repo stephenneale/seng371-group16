@@ -17,7 +17,7 @@ class CourseContentController(
 
 	@GetMapping("/{courseId}")
 	fun getCourseContent(@PathVariable courseId: Int): List<CourseContentDto> {
-		return contentService.getContentForCourse(1).map { it.toDto() }
+		return contentService.getContentForCourse(courseId).map { it.toDto() }
 	}
 
 	@PostMapping("/{courseId}/{contentId}/view")
