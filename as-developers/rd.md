@@ -8,6 +8,7 @@ Requirements Document
 | v1.0    | 2023-01-27      | Developer team         | Initial drafting                          |
 | v2.0    | 2023-03-04      | Andrew                 | Added changes from RFC                    |
 | v2.1    | 2023-03-05      | Andrew                 | Added changes from RFC                    |
+| v3.0    | 2023-04--11     | Andrew                 | Added changes from RFC                    |
 ## Table of Contents
 
 <!-- TOC -->
@@ -211,6 +212,10 @@ which the student can see in the place where they submitted their assignment. In
 REQ-2-6: Instructors may optionally set a due date for assignments, after which students cannot
 submit anything further.
 
+REQ-2-7: Students will be able to sign up for new courses on theor own
+
+REQ-2-8: Instructors or Course Administration will be able to create their own courses and be able to customize the name, and content with-in that respective course
+
 ### 3.3 Grades
 
 #### 3.3.1 Description and Priority
@@ -222,6 +227,10 @@ REQ-3-1: Students see all the graded items' item names, grades and weights achie
 REQ-3-2: Instructors can input grade number (decimal number from 0.0 to 100.0) in each item.
 
 REQ-3-3: The system can calculate the weight achieved automatically based on a formula provided by the instructor.
+
+REQ-3-4: When a student reviews their grades on assesments, there is a link students can click that will show them the feedback that the instructor left on the assesment.
+
+REQ-3-5: When the courses is completed, the final grade in that course will be shown on the grades page.
 
 ### 3.4 Self-adaptation
 
@@ -242,6 +251,8 @@ frequently and recently, based on some reasonable implementation of the "frecenc
 REQ-4-2: Users should be reminded of upcoming deadlines by email, and the system should keep track
 of what email notification times are most likely to correlate with system interaction shortly after
 delivery. Then, notification delivery times should be tuned closer to these times.
+
+REQ-4-3: Due to the nature of frequently visisted, the recently viewed tab will only show the 5 most recently visited options.
 
 ### 3.5 User Authentication
 
@@ -289,7 +300,7 @@ that they administer. Users can interact with this in a standard web-app fashion
 pointer and click, keyboard, etc), as a later-stage goal this interface should be accessible to users
 with a wide variety of ability. In particular, it should play nice with screen readers, and shouldn't
 communicate essential information using colour in a way that would cause difficulties for people with
-colour blindness.
+colour blindness. The interface will have a Dark Mode feature for students who prefer dark mode over the regular light mode.
 
 ### 4.2 Hardware Interfaces
 
